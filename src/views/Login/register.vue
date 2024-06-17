@@ -17,18 +17,18 @@
             p-id="2998"
           ></path></svg
       ></span>
-      <div class="sc-ckMVTt ipKhVx">登録</div>
+      <div class="sc-ckMVTt ipKhVx">登記</div>
     </div>
     <div class="sc-gFGZVQ gTnzTn fix-height"></div>
     <h3 class="sc-GVOUr iwjCtr"></h3>
-    <h3>新規ユーザーとして登録</h3>
+    <h3>註冊成為新用戶</h3>
     <div class="sc-iNWwEs fGkUGU" style="margin-top: 3rem">
       <div class="sc-gSAPjG cHATSO">
         <span class="sc-dwLEzm eInsnn">+81</span>
       </div>
       <input
         type="number"
-        placeholder="携帯電話番号"
+        placeholder="手機號碼"
         v-model="form.account"
       />
     </div>
@@ -39,7 +39,7 @@
         alt=""
       /><input
         type="password"
-        placeholder="パスワードを入力してください"
+        placeholder="請輸入您的密碼"
         v-model="form.password"
       />
     </div>
@@ -50,12 +50,12 @@
         alt=""
       /><input
         type="password"
-        placeholder="パスワードの確認"
+        placeholder="確認密碼"
         v-model="SurePassword"
       />
     </div>
     <div class="sc-jIAOiI bqZHFE iiEAzi" @click="toLogin()">
-      ユーザーの登録
+      用戶註冊
     </div>
   </div>
 </template>

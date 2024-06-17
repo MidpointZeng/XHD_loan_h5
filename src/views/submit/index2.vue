@@ -8,7 +8,7 @@
                             d="M970.496 543.829333l30.165333-30.165333-415.829333-415.914667a42.837333 42.837333 0 0 0-60.288 0 42.538667 42.538667 0 0 0 0 60.330667l355.413333 355.498667-355.413333 355.285333a42.496 42.496 0 0 0 0 60.288c16.64 16.64 43.861333 16.469333 60.288 0.042667l383.914667-383.701334 1.749333-1.664z"
                             fill="#3D3D3D" p-id="2998"></path>
                     </svg></span>
-                <div class="sc-ckMVTt ipKhVx">情報入力</div>
+                <div class="sc-ckMVTt ipKhVx">資訊輸入</div>
             </div>
             <div class="sc-gFGZVQ gTnzTn fix-height"></div>
 
@@ -34,7 +34,7 @@
                             <div class="sc-fXynhf jQGPhK">
                                 <div class="sc-dwLEzm" :class="{ 'iDnLzP': !form2.job_option_type }">{{
                                     form2.job_option_type ? form2.job_option_type :
-                                    'ジョブのオプションタイプ'
+                                    '工作選項類型'
                                 }} </div>
                                 <!--  @click="bDWjLjShow4 = true" -->
                                 <svg t="1659509597911" class="icon"
@@ -49,10 +49,10 @@
                                 <div class="sc-ftvSup dueZBn" style="opacity: 1;"></div>
                                 <div class="sc-papXJ dGrcLk">
                                     <ul>
-                                        <div @click="bDWjLjShow4 = false"><span>近い</span></div>
-                                        <li class="active" @click="form2.job_option_type = '自己所有の会社', bDWjLjShow4 = false">
-                                            自己所有の会社</li>
-                                        <li class="" @click="form2.job_option_type = 'サラリーマン', bDWjLjShow4 = false">サラリーマン
+                                        <div @click="bDWjLjShow4 = false"><span>關閉</span></div>
+                                        <li class="active" @click="form2.job_option_type = '自有公司', bDWjLjShow4 = false">
+                                            自有公司</li>
+                                        <li class="" @click="form2.job_option_type = '辦公室職員', bDWjLjShow4 = false">辦公室職員
                                         </li>
                                     </ul>
                                 </div>
@@ -64,7 +64,7 @@
                             <div class="sc-fXynhf jQGPhK">
                                 <div class="sc-dwLEzm" :class="{ 'iDnLzP': !form2.total_option_years }">{{
                                     form2.total_option_years ? form2.total_option_years :
-                                    'オプションの総稼働年数'
+                                    '選項的總營運年限'
                                 }} </div>
                                 <!-- @click="bDWjLjShow5 = true" -->
                                 <svg  t="1659509597911" class="icon"
@@ -79,11 +79,11 @@
                                 <div class="sc-ftvSup dueZBn" style="opacity: 1;"></div>
                                 <div class="sc-papXJ dGrcLk">
                                     <ul @click="bDWjLjShow5 = false">
-                                        <div @click.stop="bDWjLjShow5 = false"><span>近い</span></div>
+                                        <div @click.stop="bDWjLjShow5 = false"><span>關閉</span></div>
                                         <li class="active" @click="form2.total_option_years = '0 - 1'">0 - 1</li>
                                         <li class="" @click="form2.total_option_years = '1 - 3'">1 - 3</li>
                                         <li class="" @click="form2.total_option_years = '3 - 5'">3 - 5</li>
-                                        <li class="" @click="form2.total_option_years = '5以上'">5以上</li>
+                                        <li class="" @click="form2.total_option_years = '5個或更多'">5以上</li>
                                     </ul>
                                 </div>
                             </div>
@@ -94,7 +94,7 @@
                             <div class="sc-fXynhf jQGPhK">
                                 <div class="sc-dwLEzm " :class="{ 'iDnLzP': !form2.monthly_option_income }">{{
                                     form2.monthly_option_income ? form2.monthly_option_income :
-                                    'オプション月収'
+                                    '可選月收入'
                                 }} </div>
                                 <!-- @click="bDWjLjShow6 = true" -->
                                 <svg  t="1659509597911" class="icon"
@@ -109,7 +109,7 @@
                                 <div class="sc-ftvSup dueZBn" style="opacity: 1;"></div>
                                 <div class="sc-papXJ dGrcLk">
                                     <ul @click="bDWjLjShow6 = false">
-                                        <div @click="bDWjLjShow6 = false"><span>近い</span></div>
+                                        <div @click="bDWjLjShow6 = false"><span>關閉</span></div>
                                         <li class="active" @click="form2.monthly_option_income = '0 - 14999'">0 - 14999</li>
                                         <li class="" @click="form2.monthly_option_income = '15000 - 24999'">15000 - 24999
                                         </li>
@@ -117,7 +117,7 @@
                                         </li>
                                         <li class="" @click="form2.monthly_option_income = '35000 - 44999'">35000 - 44999
                                         </li>
-                                        <li class="" @click="form2.monthly_option_income = '45000以上'">45000以上</li>
+                                        <li class="" @click="form2.monthly_option_income = '超過45000'">超過45000</li>
                                     </ul>
                                 </div>
                             </div>
@@ -128,7 +128,7 @@
                             <div class="sc-fXynhf jQGPhK">
                                 <div class="sc-dwLEzm" :class="{ 'iDnLzP': !form2.monthly_household_income }">{{
                                     form2.monthly_household_income ? form2.monthly_household_income :
-                                    '月々の世帯収入'
+                                    '家庭月收入'
                                 }} </div>
                                 <!-- @click="bDWjLjShow7 = true" -->
                                 <svg  t="1659509597911" class="icon"
@@ -143,7 +143,7 @@
                                 <div class="sc-ftvSup dueZBn" style="opacity: 1;"></div>
                                 <div class="sc-papXJ dGrcLk">
                                     <ul @click="bDWjLjShow7 = false">
-                                        <div @click="bDWjLjShow7 = false"><span>近い</span></div>
+                                        <div @click="bDWjLjShow7 = false"><span>關閉</span></div>
                                         <li class="active" @click="form2.monthly_household_income = '0 - 24999'">0 - 24999
                                         </li>
                                         <li class="" @click="form2.monthly_household_income = '25000 - 34999'">25000 - 34999
@@ -158,7 +158,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="sc-kIKDeO czsnHl" @click="setfamily()">勤務情報確認</div> -->
+                    <!-- <div class="sc-kIKDeO czsnHl" @click="setfamily()">確認工作資訊</div> -->
                 </div>
             </div>
 

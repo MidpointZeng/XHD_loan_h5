@@ -8,7 +8,7 @@
                             d="M970.496 543.829333l30.165333-30.165333-415.829333-415.914667a42.837333 42.837333 0 0 0-60.288 0 42.538667 42.538667 0 0 0 0 60.330667l355.413333 355.498667-355.413333 355.285333a42.496 42.496 0 0 0 0 60.288c16.64 16.64 43.861333 16.469333 60.288 0.042667l383.914667-383.701334 1.749333-1.664z"
                             fill="#3D3D3D" p-id="2998"></path>
                     </svg></span>
-                <div class="sc-ckMVTt ipKhVx">情報入力</div>
+                <div class="sc-ckMVTt ipKhVx">資訊輸入</div>
             </div>
             <div class="sc-gFGZVQ gTnzTn fix-height"></div>
             <div v-if="form3Show">
@@ -35,12 +35,12 @@
                         <div>+81 {{ form3.account }}</div>
                     </div>
                     <div class="sc-jOhDuK iQSHss"><input placeholder="銀行名" v-model="form3.bank_name" disabled></div>
-                    <div class="sc-jOhDuK iQSHss"><input placeholder="金融機関コード" v-model="form3.bank_code" disabled></div>
-                    <div class="sc-jOhDuK iQSHss"><input placeholder="支店名" v-model="form3.bank_Branch_name" disabled></div>
-                    <div class="sc-jOhDuK iQSHss"><input placeholder="取引種類" v-model="form3.trade_type" disabled></div>
-                    <div class="sc-jOhDuK iQSHss"><input placeholder="囗座番号" v-model="form3.bank_card_number" disabled></div>
-                    <div class="sc-jOhDuK iQSHss"><input placeholder="口座名義(カタ)" v-model="form3.account_name" disabled></div>
-                    <!-- <div class="sc-kIKDeO czsnHl" @click="setbankinfo()">銀行情報の確認</div> -->
+                    <div class="sc-jOhDuK iQSHss"><input placeholder="銀行代碼" v-model="form3.bank_code" disabled></div>
+                    <div class="sc-jOhDuK iQSHss"><input placeholder="分店名稱" v-model="form3.bank_Branch_name" disabled></div>
+                    <div class="sc-jOhDuK iQSHss"><input placeholder="交易類型" v-model="form3.trade_type" disabled></div>
+                    <div class="sc-jOhDuK iQSHss"><input placeholder="生肖數字" v-model="form3.bank_card_number" disabled></div>
+                    <div class="sc-jOhDuK iQSHss"><input placeholder="帳號名稱（型）" v-model="form3.account_name" disabled></div>
+                    <!-- <div class="sc-kIKDeO czsnHl" @click="setbankinfo()">驗證銀行訊息</div> -->
                 </div>
             </div>
 

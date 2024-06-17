@@ -8,7 +8,7 @@
                             d="M970.496 543.829333l30.165333-30.165333-415.829333-415.914667a42.837333 42.837333 0 0 0-60.288 0 42.538667 42.538667 0 0 0 0 60.330667l355.413333 355.498667-355.413333 355.285333a42.496 42.496 0 0 0 0 60.288c16.64 16.64 43.861333 16.469333 60.288 0.042667l383.914667-383.701334 1.749333-1.664z"
                             fill="#3D3D3D" p-id="2998"></path>
                     </svg></span>
-                <div class="sc-ckMVTt ipKhVx">お金を貸す</div>
+                <div class="sc-ckMVTt ipKhVx">借錢</div>
             </div>
             <div class="sc-gFGZVQ gTnzTn fix-height"></div>
             <div class="sc-fctJkW fIkvDH" @click="show_dig()"><span>¥{{ formatNumber(form.quota_useing) }}</span></div>
@@ -29,68 +29,68 @@
             </div>
             <div class="sc-grREDI gqyLgn"><img alt=""
                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAQlBMVEUAAAAAh+sAguoAhuwAiO0Ahe4Ah+0Ahu0AiOwAiO0AhO0Ag+sAhuwAiO0AguoAie4Aie4AiuwAfuoAfuwAnu4Ahuxa0IodAAAAFXRSTlMAQIC/IE/Rp3tVRSuf29isdWhKGg/oUxuYAAAApUlEQVRYw+3WSQ7CMBBE0YpxRmdO6v5XBRlkQMGS3RGCRb8D/EWpF41/tzu344SWNy3ESnolhOxAb7CQmfgwQaRh0JwYQDyDHflizJ+h5ptaOIB4hpUHKzJsFQ+qTTCAdIaZH81I1DGiQ5qKEVXmCR4ZpDCM6pGiZVSbOOJiPAbGWzpkKRgUuNOABjSgAQ1oQAMa+HHAMrAQ6Z/PmYwzF884qK+6Ah68OMS+DA1aAAAAAElFTkSuQmCC">
-                <div>ドラッグ セレクト</div>
+                <div>拖曳選擇</div>
             </div>
-            <h2 class="sc-bWXABl CwUGl">最大借入額<br><span>¥</span>{{ formatNumber(max_useing) }}</h2>
+            <h2 class="sc-bWXABl CwUGl">最高貸款金額<br><span>¥</span>{{ formatNumber(max_useing) }}</h2>
             <div class="sc-eFWqGp gyjir"></div>
             <div class="sc-csvncw cFPoqI">
-                <h2>貸出期間(月)</h2>
+                <h2>貸款期限（月）</h2>
                 <div>
                     <span v-for="(month, index) in months" :key="index" :class="{ active: month === monthActiveIndex }"
                         @click="monthActiveIndex = month">{{ month }}月</span>
                 </div>
             </div>
             <div class="sc-dFdIVH kxdrlP">
-                <h2>ローン契約とローンの詳細</h2>
+                <h2>貸款協議和貸款詳情</h2>
                 <div>
-                    <span>ローンの金額</span>
+                    <span>貸款額度</span>
                     <span>¥{{ formatNumber(form.quota_useing) }}</span>
                 </div>
                 <div>
-                    <span>実際の金額が到着しました</span>
+                    <span>實際金額已到賬</span>
                     <!-- quota_used -->
                     <span>¥{{ formatNumber(form.quota_useing) }}</span>
                 </div>
                 <div>
-                    <span>総利子</span>
+                    <span>總利息</span>
                     <span>¥{{ formatNumber(form.Interest) }}</span>
                 </div>
                 <div>
-                    <span>月利</span>
+                    <span>每月利息</span>
                     <span>{{ form.monthly_interest_rate * 100 }}%</span>
                 </div>
                 <div>
-                    <span>ローンの開始日と終了日</span>
+                    <span>貸款開始和結束日期</span>
                     <span>
                         <div>{{ form.quota_start_time }}</div>
                         <div>{{ form.quota_end_time }}</div>
                     </span>
                 </div>
                 <div>
-                    <span>最初の更新日</span>
+                    <span>首次更新日期</span>
                     <span>{{ form.repayment_date }}</span>
                 </div>
                 <div>
-                    <span>返済日</span>
-                    <span>{{ form.payment_date }} 毎月の日</span>
+                    <span>還款日期</span>
+                    <span>{{ form.payment_date }} 每月日</span>
                 </div>
                 <p><img alt=""
-                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAjVBMVEUAAAARZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/5X9nuNAAAALnRSTlMA2cCY1IhA6MyuqTr1no9SRzIrCu7gubSkah8aFPvTxYSBeG9jW01BNiYQBHwlcl9u6AAAAWhJREFUWMPtl9eSgkAQRXtIEiVKEOMG4y7//3mrdlNoUcLS82KV3CeYqnMZphMAgKpVTGkqXFRJCUCXM9BByBkIqCQ1GowG72tgGYYnY7CFi7Z8Ax2uCtkGU7jJ4RoQDzbTQCX+h3mIHvEfzDDmxH8y88AmvmAmkkX8FzMTszPy38xUTmPk/Y5aUIpCecYrJ+R3y+cGShOgltYL5AO3oxqNOkRtmSXy+6SrnJ36kNv8nApg0tkPbGgdM0o7AlbgrKehbADlP76oiHA5Ej0dqSm14H6rsxAXj6veltYUm9NsdnLApbnZ0RPb5RZqNU9HW647m2q7YCJ8YLLH25Py765sxbTlK+IGeBOnA9p6Skm3yKrlDi/P2aC5oJT0WMsHlDVwsJi/8KB88GRaRfe8xxht4tDwKms2TgwgTZnDNaEA6uzp7N5CsJEZ77lh2C/6gTEajAYvaaDJ8Rqocgaq/M83gC64tNAB/gD3oJrF/havLgAAAABJRU5ErkJggg==">私は読んで同意します<span
-                        @click="$router.push('/aggrement?form=' + JSON.stringify(form))">《貸与および担保契約》</span>
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAjVBMVEUAAAARZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/4RZ/5X9nuNAAAALnRSTlMA2cCY1IhA6MyuqTr1no9SRzIrCu7gubSkah8aFPvTxYSBeG9jW01BNiYQBHwlcl9u6AAAAWhJREFUWMPtl9eSgkAQRXtIEiVKEOMG4y7//3mrdlNoUcLS82KV3CeYqnMZphMAgKpVTGkqXFRJCUCXM9BByBkIqCQ1GowG72tgGYYnY7CFi7Z8Ax2uCtkGU7jJ4RoQDzbTQCX+h3mIHvEfzDDmxH8y88AmvmAmkkX8FzMTszPy38xUTmPk/Y5aUIpCecYrJ+R3y+cGShOgltYL5AO3oxqNOkRtmSXy+6SrnJ36kNv8nApg0tkPbGgdM0o7AlbgrKehbADlP76oiHA5Ej0dqSm14H6rsxAXj6veltYUm9NsdnLApbnZ0RPb5RZqNU9HW647m2q7YCJ8YLLH25Py765sxbTlK+IGeBOnA9p6Skm3yKrlDi/P2aC5oJT0WMsHlDVwsJi/8KB88GRaRfe8xxht4tDwKms2TgwgTZnDNaEA6uzp7N5CsJEZ77lh2C/6gTEajAYvaaDJ8Rqocgaq/M83gC64tNAB/gD3oJrF/havLgAAAABJRU5ErkJggg==">我已閱讀並同意<span
+                        @click="$router.push('/aggrement?form=' + JSON.stringify(form))">《貸款和抵押協議》</span>
                 </p>
             </div>
-            <div class="sc-brCFrO jgBYIR" @click="goLink()">規約に同意して確認する</div>
+            <div class="sc-brCFrO jgBYIR" @click="goLink()">同意條款並確認</div>
             <div class="sc-dsQDmV cLwvWq" v-if="dialog">
                 <div class="sc-iBkjds bDWjLj">
                     <div class="sc-ftvSup dueZBn" style="opacity: 1;"></div>
                     <div class="sc-papXJ dGrcLk">
                         <div class="sc-cZwWEu jrpZWt">
-                            <h3>お金を貸す</h3>
+                            <h3>借錢</h3>
                             <h4>{{ formatNumber(max_useing) }}</h4>
-                            <div class="sc-jTYCaT clBDKP"><input type="number" placeholder="内容を入力してください"
+                            <div class="sc-jTYCaT clBDKP"><input type="number" placeholder="請輸入內容"
                                     v-model="quota_useing2">
                             </div>
-                            <div class="sc-jQHtVU etftrS"><span @click="dialog = false">キャンセル</span><span
+                            <div class="sc-jQHtVU etftrS"><span @click="dialog = false">取消</span><span
                                     @click="checkNumber()">確認</span></div>
                         </div>
                     </div>

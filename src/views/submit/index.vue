@@ -8,13 +8,13 @@
                             d="M970.496 543.829333l30.165333-30.165333-415.829333-415.914667a42.837333 42.837333 0 0 0-60.288 0 42.538667 42.538667 0 0 0 0 60.330667l355.413333 355.498667-355.413333 355.285333a42.496 42.496 0 0 0 0 60.288c16.64 16.64 43.861333 16.469333 60.288 0.042667l383.914667-383.701334 1.749333-1.664z"
                             fill="#3D3D3D" p-id="2998"></path>
                     </svg></span>
-                <div class="sc-ckMVTt ipKhVx">情報入力</div>
+                <div class="sc-ckMVTt ipKhVx">資訊輸入</div>
             </div>
             <div class="sc-gFGZVQ gTnzTn fix-height"></div>
             <div v-if="form1Show">
                 <div class="sc-ZyCDH lirsN active">
                     <img alt=""
-                        src="data:image/png;base64,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"><span>個人情報</span>
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADkAAAA6CAMAAAA9UgEZAAAC/VBMVEUAAABOfslKe8jW4fLx9fs7fupEdsZXhc2Vst+uw+U0eemPrt00eekuZr8tbdMtbdRqktAqZL4tZr+uxOa1yOcwaMAoYb0ucdtljtBgi850mdRxmNQ1eupHecd8n9eDpNdwl9MyeOmov+STsNyFp9ooYb0sZL4yeOi0yOjP3PA9f+m2yukyeOn////C0uz///8tbtXH1u7///89ddBCftlQiOMoYr1blO0zeelPi+xpnO5Vg8tCg+o/c8Sctt9Jh+xxofBWg8ooYb0oYbwyeOmRr95dlOsyeOgyeOgyeOjj6/aGptkoYr1oaGj9/f4yeOnh5vX///9JqMz64MlkZWVfX18wd+knYb0+pMkmYLy8vLzf5PQdWrp/f3/i5/YfXLvq7fjl6fbj6Pcocuj/5s5iYmNGRkbn6/csdOgiXbyZzuL2+f7JyckqY7/b4vQwaMD//v8yeuwkbug3bcIuZr/7+/3y9/zq6fdIqs5GeMZfYWOVufTT3PGLxN+Bodgsa9BEpsvz28Y0asGqrbeqnpRqampnZGNbW1zp7v3u7/nr7vnX3/KBq+4wdeRIrdNgi888cMNOnbuBfXhycW9mbG5FRENBQD/t8v3w8vrj6/ry8vJmmu/s7OzAz+tLieu3yOihuOIucdz84stRf8o/c8bBw8Wrq6v49/nC1/ipxvWfwPTM1+/H0+1bk+1Ghesxd+eYsd/f395vldP/6NA+csSytb/Ww7GzppqMjI2GhoZ2dXXX5frR4Pnd7/XQ6PF8qfFwovBWj+xRjexChOypvuSQyeDO0t+Oqtx6ndYiZtTT09NdsdDOz8/u1sHn0by0tLRSkqtbgY+il46bkopeeYNGbn2zzPaXu/OGsPLd4vCj2Oy63uuuweXk5OSXzeF+wdueydl2mdVitNJrktE/qdApZcUqZcQpZcS1ucMkYsPo07+Vq7vhzLlDl7dUkqnGtqfGtKajo6OhoaFXjJ+5q566q52cnJxgfohQdoZ8f4BjcXg+aHdSUlJPT05LS0tBMaW5AAAATHRSTlMA/v5DEf7+/MeF/NmhUyAX8enPraaCPw788/Lp5+Xf3d3OvLOsqqSUk4qBT0xAODEsIgj+/Pj17OTe1c/Evru3qqGbm3BuVVI+PR8Zfxp3cQAABVtJREFUSMeN12V001AYBuCtuLu7u7u7h5KU0BBaKqtTWoq0bMgYsDEYNoa7u7u7u7u7u+vhSpqblhR4z9mfrU+/70ruzcJkUyVNscJ5wlMuqFa9Rq26jVtmCvu/tC2WOaWL412D5q7u2bNnB5AUdcpm/LcrV0hBURRwowEiSdGo9d9dskK9geN44kjqVw7tkjdMSUHomguc2m43mex2tVqkadPnClUwMwXDPxqtNvWyp121b+XKvbNSqIH32/xtZGGacAwf200ppvdfMtXnVTJKZ8KOpbtn2U1qoWxzGZi9D4Lc016zLk9lAuJcMl3tt6X+gEWH4Ir6WUud4MNKaRjGs2OPXeg5vXxF3jHKSZgUe5asMslVTdMDQX3v2Urk5OzkPQItK53V+Qg6opbLONJzf2Gw5ck65sUVwwf4gGRkg/6wDI+1triRs+GKiW6bBzR7c2GXP3NsGgPL9u8VMEsV0UJyQ1YYpyiZtVvbd5KJZdtpVHa3SdpvOlRSe8CmcyqPxXVi28uFjf/kBVV9e9FQi6B9WKkHguum0DpmRnvi2H4gFmIti2C/23G/raBMjUoOGUnTBmYL+WS/8ec3f4hNYllC4ViZUSZUFE5sFBpltI7W+KYRyMaeNIN03LRN/F2n03CWJqdARTP6NwE3EkjlCfL9b8zzOsKYTyaJX7YVrfYoPL3C/OjBKGk3011sNXZ9RyHzTln8siuDRqpGD1xY1bFofgboaFpD5PjBHcWsP2chEtJ9kKYNq9AH9hplpEGIPI8RzqlOgXIpmt6wMugROQKhjsjNUjk4LlD6sMRrMgdKTSg5nkhE96uhzAdhn9lQuomMDZBskJyOZCq0DVYEySQJNL/uFCRHIYnOyd4DULdOUVo2mYnEzRLp6Y9kbyRH0jCTRcmOH2z2w1hWIlGWIZkokRFQ4rBJL9YDO888D0AZSbrFcqHkyWDPbRrc8dnHJDBIuW5XkxkC0RE5jN3SZe1i74wTi7YBKjNDo8mqQLlRhF/XwvPIA36mLRomSrIqPQeRnQC7HcoK8MJxJ+MRTrxrZ4LlKnWH1byw+6IF+TMOw8iYe7sYFN/BmMhXAZJxgt03iBJ2fLgRS2s8/EicKlIVE3P7+s6du24d76xSjTk7TCov9eowmqL8T5lbh+Uv2O/7SBVI586qyJjOMSqYgJor7R0ecjWFJ1sbPQJL64+49hPGqYISeZZIz1R1z0E8lcV/mrg0UG60WifGt/8GSgbljOQ0udJhLkdRJcUT7DBoV3doktVqjf885g85bgI8wRZB6ds/lwegsnhqJrrhxmUBnfgllJzBwAviKAdKZiUnNRppxCEoL8pLyzs4PcOP8hRIBuntMNtG01OHTpwkL9n4LYvhWqZCMGsufCMp0EgTB0TQ9PCN8ZO+P+gcnJf94t56GcbrjdZTYklyCyqMRkCvPnk+EOVgN5I7C2cwjDNhxBotR4GUCLp5tWM1gEYMH94XZ8RiyS3snWKjbXOQo7JkIrd9OL60U7kNNIlGo6GNNkNCgsEWAe4OesQaByf0SlK6B64aNdOgQ4poHJq2uY84eAomR+BbjQuP1XXYaKBlYjTMVGhxxWbBb1K4Kq+df8BoMAYync2w/K4LzSqZHZJsuCqn18+fM9JgsBl1uJjRkBAxc10PLY9hUyLIWBUUjl6feH/NzAG0DXide/mN6HAKu+AxkhnOTQlxaLVUb0WqsbnHzl/Qx6HV+12WnKHejFNv8FuOdzj0Wq1e7+A5SoirJF5H+bIFh1ChkpUUlE25glFyrE8D4kKmSvHMGwJZjwI5Mob9X9q1KA7+04lasGGBokC9Jhlk2W9p5MTSqPVnzwAAAABJRU5ErkJggg=="><span>個人資訊</span>
                     <svg v-if="!show1" @click="show1 = true" t="1659509597911" class="icon" viewBox="0 0 1024 1024"
                         xmlns="http://www.w3.org/2000/svg" p-id="2997" width="200" height="200">
                         <path
@@ -29,13 +29,13 @@
                     </svg>
                 </div>
                 <div v-show="show1">
-                    <div class="sc-jOhDuK iQSHss"><input placeholder="あなたの名前を入力してください" v-model="form1.name"></div>
-                    <div class="sc-jOhDuK iQSHss"><input placeholder="年齢を入力してください" v-model="form1.age"></div>
+                    <div class="sc-jOhDuK iQSHss"><input placeholder="請輸入你的名字" v-model="form1.name"></div>
+                    <div class="sc-jOhDuK iQSHss"><input placeholder="請輸入您的年齡" v-model="form1.age"></div>
                     <div class="sc-hlnMnd dUwcBf">
                         <div class="sc-GVOUr iItKtQ selector">
                             <div class="sc-fXynhf jQGPhK" @click="bDWjLjShow = true">
                                 <div class="sc-dwLEzm " :class="{ 'iDnLzP': !form1.sex }">{{ form1.sex ? form1.sex :
-                                    '性別を選択してください'
+                                    '請選擇性別'
                                 }}</div><svg t="1659509597911" class="icon" viewBox="0 0 1024 1024"
                                     xmlns="http://www.w3.org/2000/svg" p-id="2997" width="200" height="200">
                                     <path
@@ -47,23 +47,23 @@
                                 <div class="sc-ftvSup dueZBn" style="opacity: 1;"></div>
                                 <div class="sc-papXJ dGrcLk">
                                     <ul>
-                                        <div @click="bDWjLjShow = false"><span>近い</span></div>
+                                        <div @click="bDWjLjShow = false"><span>關閉</span></div>
                                         <li class="active" @click="form1.sex = '男性', bDWjLjShow = false">男性</li>
-                                        <li class="" @click="form1.sex = '女性', bDWjLjShow = false">女性</li>
+                                        <li class="" @click="form1.sex = '女士', bDWjLjShow = false">女士</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
 
                     </div>
-                    <div class="sc-jOhDuK iQSHss"><input placeholder="メールアドレスを入力してください" v-model="form1.email"></div>
-                    <div class="sc-jOhDuK iQSHss"><input placeholder="現在の住所を入力してください" v-model="form1.address"></div>
+                    <div class="sc-jOhDuK iQSHss"><input placeholder="請輸入您的電子郵件地址" v-model="form1.email"></div>
+                    <div class="sc-jOhDuK iQSHss"><input placeholder="請輸入您目前的地址" v-model="form1.address"></div>
                     <div class="sc-hlnMnd dUwcBf">
                         <div class="sc-GVOUr iItKtQ selector">
                             <div class="sc-fXynhf jQGPhK" @click="bDWjLjShow2 = true">
                                 <div class="sc-dwLEzm" :class="{ 'iDnLzP': !form1.marriage_status }">{{
                                     form1.marriage_status ?
-                                    form1.marriage_status : '婚姻状況オプション' }} </div><svg t="1659509597911" class="icon"
+                                    form1.marriage_status : '婚姻狀況選項' }} </div><svg t="1659509597911" class="icon"
                                     viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" p-id="2997" width="200"
                                     height="200">
                                     <path
@@ -75,11 +75,11 @@
                                 <div class="sc-ftvSup dueZBn" style="opacity: 1;"></div>
                                 <div class="sc-papXJ dGrcLk">
                                     <ul>
-                                        <div @click="bDWjLjShow2 = false"><span>近い</span></div>
+                                        <div @click="bDWjLjShow2 = false"><span>關閉</span></div>
                                         <li class="active" @click="form1.marriage_status = '離婚', bDWjLjShow2 = false">離婚
                                         </li>
                                         <li class="" @click="form1.marriage_status = '未婚', bDWjLjShow2 = false">未婚</li>
-                                        <li class="" @click="form1.marriage_status = '既婚', bDWjLjShow2 = false">既婚</li>
+                                        <li class="" @click="form1.marriage_status = '已婚', bDWjLjShow2 = false">已婚</li>
                                     </ul>
                                 </div>
                             </div>
@@ -91,7 +91,7 @@
                                 <div class="sc-dwLEzm " :class="{ 'iDnLzP': !form1.degree }">{{ form1.degree ?
                                     form1.degree
                                     :
-                                    'オプション学歴' }} </div><svg t="1659509597911" class="icon" viewBox="0 0 1024 1024"
+                                    '可選教育背景' }} </div><svg t="1659509597911" class="icon" viewBox="0 0 1024 1024"
                                     xmlns="http://www.w3.org/2000/svg" p-id="2997" width="200" height="200">
                                     <path
                                         d="M970.496 543.829333l30.165333-30.165333-415.829333-415.914667a42.837333 42.837333 0 0 0-60.288 0 42.538667 42.538667 0 0 0 0 60.330667l355.413333 355.498667-355.413333 355.285333a42.496 42.496 0 0 0 0 60.288c16.64 16.64 43.861333 16.469333 60.288 0.042667l383.914667-383.701334 1.749333-1.664z"
@@ -102,18 +102,18 @@
                                 <div class="sc-ftvSup dueZBn" style="opacity: 1;"></div>
                                 <div class="sc-papXJ dGrcLk">
                                     <ul>
-                                        <div @click="bDWjLjShow3 = false"><span>近い</span></div>
-                                        <li class="active" @click="form1.degree = '博士号', bDWjLjShow3 = false">博士号</li>
-                                        <li class="" @click="form1.degree = '修士号', bDWjLjShow3 = false">修士号</li>
-                                        <li class="" @click="form1.degree = '学士号', bDWjLjShow3 = false">学士号</li>
-                                        <li class="" @click="form1.degree = '高校資格', bDWjLjShow3 = false">高校資格</li>
+                                        <div @click="bDWjLjShow3 = false"><span>關閉</span></div>
+                                        <li class="active" @click="form1.degree = '博士號', bDWjLjShow3 = false">博士號</li>
+                                        <li class="" @click="form1.degree = '修士號', bDWjLjShow3 = false">修士號</li>
+                                        <li class="" @click="form1.degree = '學士號', bDWjLjShow3 = false">學士號</li>
+                                        <li class="" @click="form1.degree = '高中學歷', bDWjLjShow3 = false">高中學歷</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="sc-eKBdFk icUshI"></div>
-                    <div class="sc-kIKDeO czsnHl" @click="setUserInfo()">個人情報の確認</div>
+                    <div class="sc-kIKDeO czsnHl" @click="setUserInfo()">確認個人資訊</div>
                 </div>
             </div>
 
@@ -139,7 +139,7 @@
                             <div class="sc-fXynhf jQGPhK" @click="bDWjLjShow4 = true">
                                 <div class="sc-dwLEzm" :class="{ 'iDnLzP': !form2.job_option_type }">{{
                                     form2.job_option_type ? form2.job_option_type :
-                                    'ジョブのオプションタイプ'
+                                    '工作選項類型'
                                 }} </div><svg t="1659509597911" class="icon" viewBox="0 0 1024 1024"
                                     xmlns="http://www.w3.org/2000/svg" p-id="2997" width="200" height="200">
                                     <path
@@ -151,11 +151,11 @@
                                 <div class="sc-ftvSup dueZBn" style="opacity: 1;"></div>
                                 <div class="sc-papXJ dGrcLk">
                                     <ul>
-                                        <div @click="bDWjLjShow4 = false"><span>近い</span></div>
-                                        <li class="active" @click="form2.job_option_type = '自己所有の会社', bDWjLjShow4 = false">
-                                            自己所有の会社</li>
-                                        <li class="" @click="form2.job_option_type = 'サラリーマン', bDWjLjShow4 = false">
-                                            サラリーマン
+                                        <div @click="bDWjLjShow4 = false"><span>關閉</span></div>
+                                        <li class="active" @click="form2.job_option_type = '自有公司', bDWjLjShow4 = false">
+                                            自有公司</li>
+                                        <li class="" @click="form2.job_option_type = '辦公室職員', bDWjLjShow4 = false">
+                                            辦公室職員
                                         </li>
                                     </ul>
                                 </div>
@@ -167,7 +167,7 @@
                             <div class="sc-fXynhf jQGPhK" @click="bDWjLjShow5 = true">
                                 <div class="sc-dwLEzm" :class="{ 'iDnLzP': !form2.total_option_years }">{{
                                     form2.total_option_years ? form2.total_option_years :
-                                    'オプションの総稼働年数'
+                                    '選項的總營運年限'
                                 }} </div><svg t="1659509597911" class="icon" viewBox="0 0 1024 1024"
                                     xmlns="http://www.w3.org/2000/svg" p-id="2997" width="200" height="200">
                                     <path
@@ -179,11 +179,11 @@
                                 <div class="sc-ftvSup dueZBn" style="opacity: 1;"></div>
                                 <div class="sc-papXJ dGrcLk">
                                     <ul @click="bDWjLjShow5 = false">
-                                        <div @click.stop="bDWjLjShow5 = false"><span>近い</span></div>
+                                        <div @click.stop="bDWjLjShow5 = false"><span>關閉</span></div>
                                         <li class="active" @click="form2.total_option_years = '0 - 1'">0 - 1</li>
                                         <li class="" @click="form2.total_option_years = '1 - 3'">1 - 3</li>
                                         <li class="" @click="form2.total_option_years = '3 - 5'">3 - 5</li>
-                                        <li class="" @click="form2.total_option_years = '5以上'">5以上</li>
+                                        <li class="" @click="form2.total_option_years = '5個或更多'">5個或更多</li>
                                     </ul>
                                 </div>
                             </div>
@@ -194,7 +194,7 @@
                             <div class="sc-fXynhf jQGPhK" @click="bDWjLjShow6 = true">
                                 <div class="sc-dwLEzm " :class="{ 'iDnLzP': !form2.monthly_option_income }">{{
                                     form2.monthly_option_income ? form2.monthly_option_income :
-                                    'オプション月収'
+                                    '可選月收入'
                                 }} </div><svg t="1659509597911" class="icon" viewBox="0 0 1024 1024"
                                     xmlns="http://www.w3.org/2000/svg" p-id="2997" width="200" height="200">
                                     <path
@@ -206,7 +206,7 @@
                                 <div class="sc-ftvSup dueZBn" style="opacity: 1;"></div>
                                 <div class="sc-papXJ dGrcLk">
                                     <ul @click="bDWjLjShow6 = false">
-                                        <div @click="bDWjLjShow6 = false"><span>近い</span></div>
+                                        <div @click="bDWjLjShow6 = false"><span>關閉</span></div>
                                         <li class="active" @click="form2.monthly_option_income = '0 - 14999'">0 - 14999
                                         </li>
                                         <li class="" @click="form2.monthly_option_income = '15000 - 24999'">15000 -
@@ -218,7 +218,7 @@
                                         <li class="" @click="form2.monthly_option_income = '35000 - 44999'">35000 -
                                             44999
                                         </li>
-                                        <li class="" @click="form2.monthly_option_income = '45000以上'">45000以上</li>
+                                        <li class="" @click="form2.monthly_option_income = '超過45000'">超過45000</li>
                                     </ul>
                                 </div>
                             </div>
@@ -229,7 +229,7 @@
                             <div class="sc-fXynhf jQGPhK" @click="bDWjLjShow7 = true">
                                 <div class="sc-dwLEzm" :class="{ 'iDnLzP': !form2.monthly_household_income }">{{
                                     form2.monthly_household_income ? form2.monthly_household_income :
-                                    '月々の世帯収入'
+                                    '家庭月收入'
                                 }} </div><svg t="1659509597911" class="icon" viewBox="0 0 1024 1024"
                                     xmlns="http://www.w3.org/2000/svg" p-id="2997" width="200" height="200">
                                     <path
@@ -241,7 +241,7 @@
                                 <div class="sc-ftvSup dueZBn" style="opacity: 1;"></div>
                                 <div class="sc-papXJ dGrcLk">
                                     <ul @click="bDWjLjShow7 = false">
-                                        <div @click="bDWjLjShow7 = false"><span>近い</span></div>
+                                        <div @click="bDWjLjShow7 = false"><span>關閉</span></div>
                                         <li class="active" @click="form2.monthly_household_income = '0 - 24999'">0 -
                                             24999
                                         </li>
@@ -260,12 +260,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="sc-kIKDeO czsnHl" @click="setfamily()">勤務情報確認</div>
+                    <div class="sc-kIKDeO czsnHl" @click="setfamily()">確認工作資訊</div>
                 </div>
             </div>
             <div v-if="form3Show">
                 <div class="sc-ZyCDH lirsN active"><img alt=""
-                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAb1BMVEUAAABWqf5Vqf5WqfhXrP9Vqf4xVHhAd65Ad61Wqf8BdeweiPJZq/////5Uqf6Av//e7v5arP8mjfQUgu8qj/RQpv5MpP1isP87mfhxt/41lfd6vP/1+v7l8f6Fwf52uf5En/rV6f7D4P5stP4Le+0Gk8kCAAAACXRSTlMAvLz4wr1YjIyBc6xRAAAAsklEQVQoz8XSyRKCMBAE0BjXlhEdIYAg7v//jXZkqRwEDx54RU2T6lxSiZnCajEjO2umDX6WazPHoNioDFITjTDbEX+UR4pCXHdpVKXah3LJm1Q1QHbYha7u4uN8An6V7nEI1CdX1cz781MiFhHEPaCJtiyKMkMM4vQ70Zdy5JFeQJEkSZRzUga0ZbIlh1uapqVykutKZDxyKYASRD30pXj4Yvyy+Uw8y69Jhk9rlxszgTfDwhmMeAHw+QAAAABJRU5ErkJggg=="><span>銀行情報</span>
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAb1BMVEUAAABWqf5Vqf5WqfhXrP9Vqf4xVHhAd65Ad61Wqf8BdeweiPJZq/////5Uqf6Av//e7v5arP8mjfQUgu8qj/RQpv5MpP1isP87mfhxt/41lfd6vP/1+v7l8f6Fwf52uf5En/rV6f7D4P5stP4Le+0Gk8kCAAAACXRSTlMAvLz4wr1YjIyBc6xRAAAAsklEQVQoz8XSyRKCMBAE0BjXlhEdIYAg7v//jXZkqRwEDx54RU2T6lxSiZnCajEjO2umDX6WazPHoNioDFITjTDbEX+UR4pCXHdpVKXah3LJm1Q1QHbYha7u4uN8An6V7nEI1CdX1cz781MiFhHEPaCJtiyKMkMM4vQ70Zdy5JFeQJEkSZRzUga0ZbIlh1uapqVykutKZDxyKYASRD30pXj4Yvyy+Uw8y69Jhk9rlxszgTfDwhmMeAHw+QAAAABJRU5ErkJggg=="><span>銀行資訊</span>
                     <svg v-if="!show3" @click="show3 = true" t="1659509597911" class="icon" viewBox="0 0 1024 1024"
                         xmlns="http://www.w3.org/2000/svg" p-id="2997" width="200" height="200">
                         <path
@@ -287,13 +287,13 @@
                         <div>+81 {{ form3.account }}</div>
                     </div>
                     <div class="sc-jOhDuK iQSHss"><input placeholder="銀行名" v-model="form3.bank_name"></div>
-                    <div class="sc-jOhDuK iQSHss"><input placeholder="金融機関コード" v-model="form3.bank_code"></div>
-                    <div class="sc-jOhDuK iQSHss"><input placeholder="支店名" v-model="form3.bank_Branch_name"></div>
+                    <div class="sc-jOhDuK iQSHss"><input placeholder="銀行代碼" v-model="form3.bank_code"></div>
+                    <div class="sc-jOhDuK iQSHss"><input placeholder="分店名稱" v-model="form3.bank_Branch_name"></div>
                     <!-- <div class="sc-jOhDuK iQSHss"><input placeholder="支店番号" v-model="form3.bank_Branch_code" ></div> -->
-                    <div class="sc-jOhDuK iQSHss"><input placeholder="取引種類" v-model="form3.trade_type"></div>
-                    <div class="sc-jOhDuK iQSHss"><input placeholder="囗座番号" v-model="form3.bank_card_number"></div>
-                    <div class="sc-jOhDuK iQSHss"><input placeholder="口座名義(カタ)" v-model="form3.account_name"></div>
-                    <div class="sc-kIKDeO czsnHl" @click="setbankinfo()">銀行情報の確認</div>
+                    <div class="sc-jOhDuK iQSHss"><input placeholder="交易類型" v-model="form3.trade_type"></div>
+                    <div class="sc-jOhDuK iQSHss"><input placeholder="生肖數字" v-model="form3.bank_card_number"></div>
+                    <div class="sc-jOhDuK iQSHss"><input placeholder="帳號名稱（型）" v-model="form3.account_name"></div>
+                    <div class="sc-kIKDeO czsnHl" @click="setbankinfo()">驗證銀行訊息</div>
                 </div>
             </div>
 
@@ -376,10 +376,10 @@ export default {
     },
   },
     created() {
-        this.userInfo = { ...JSON.parse(window.localStorage.getItem('userInfo')) }
-        console.log(window.localStorage.getItem('userInfo').userId)
-        this.form3.account = this.userInfo.account
-        this.getUserInfo()
+        // this.userInfo = { ...JSON.parse(window.localStorage.getItem('userInfo')) }
+        // console.log(window.localStorage.getItem('userInfo').userId)
+        // this.form3.account = this.userInfo.account
+        // this.getUserInfo()
     },
     methods: {
         getUserInfo() {

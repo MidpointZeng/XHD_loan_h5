@@ -8,11 +8,11 @@
             d="M970.496 543.829333l30.165333-30.165333-415.829333-415.914667a42.837333 42.837333 0 0 0-60.288 0 42.538667 42.538667 0 0 0 0 60.330667l355.413333 355.498667-355.413333 355.285333a42.496 42.496 0 0 0 0 60.288c16.64 16.64 43.861333 16.469333 60.288 0.042667l383.914667-383.701334 1.749333-1.664z"
             fill="#3D3D3D" p-id="2998"></path>
         </svg></span>
-      <div class="sc-iNWwEs hGxNKX">サイン</div>
+      <div class="sc-iNWwEs hGxNKX">符號</div>
     </div>
     <div class="sc-lbxAil jDPmfe fix-height"></div>
     <div class="sc-dWINGa fuWyQp">
-      入力内容に誤りがないことを確認の上、直筆サインをご入力ください。合格後、無事にお金を借りることができます!
+      請確保您輸入的資訊沒有錯誤，然後輸入您的手寫簽名。通過考試後就可以放心借錢了！!
     </div>
 
     <!-- <div class="sc-jGprRt hhccne">
@@ -22,7 +22,7 @@
     <div ref="canvasBox" class="canvasBox">
       <canvas class="canvasId" id="canvasId" />
     </div>
-    <div class="sc-bPyhqo bOGhYW"><span @click="$emit('back')"> リセット</span><span @click="seaveImages">確認</span></div>
+    <div class="sc-bPyhqo bOGhYW"><span @click="$emit('back')"> 重置</span><span @click="seaveImages">確認</span></div>
     <div>
       <!-- <index2 /> -->
 

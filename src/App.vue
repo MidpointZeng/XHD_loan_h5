@@ -77,20 +77,20 @@ export default {
       console.log(e);
       this.active = e;
       //获取登录信息并判断是否为登录状态----未登录
-      let userInfo = JSON.parse(window.localStorage.getItem("userInfo"));
-      if(userInfo!==null)
-      {
-        this.$router.push(this.routeList[e].path).catch(res=>{})
-      }
-      if (userInfo == null) {
-        // userInfo = {};
-        // userInfo.success = false;
-        this.$router.push('/login')
+      // let userInfo = JSON.parse(window.localStorage.getItem("userInfo"));
+      // if(userInfo!==null)
+      // {
+      //   this.$router.push(this.routeList[e].path).catch(res=>{})
+      // }
+      // if (userInfo == null) {
+      //   // userInfo = {};
+      //   // userInfo.success = false;
+      //   this.$router.push('/login')
 
-      }
-      else{
+      // }
+      // else{
 
-      }
+      // }
       // if (!userInfo.success) {
       //   //未登录成功
       //   // window.location.href = "/login";
