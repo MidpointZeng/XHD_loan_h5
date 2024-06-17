@@ -2,39 +2,39 @@
   <div class="sc-hKMtZM gSsIyS">
     <div class="sc-eCYdqJ eSlzqF">
       <div class="sc-bZkfAO HoWLo">
-        <div class="sc-kLLXSd dqxVFP">ローンの進行状況</div>
+        <div class="sc-kLLXSd dqxVFP">貸款進度</div>
         <div class="sc-ikZpkk fDFQtg"></div>
         <div class="sc-jIZahH dTwvRZ">
-          <span>ローン金額 (¥)</span><span><img @click="showe = true" alt=""
+          <span>貸款金額（元）</span><span><img @click="showe = true" alt=""
               src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAbFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8+T+BWAAAAI3RSTlMAv4BAYKCRHpZtVRTm39HKr6p3Wkwq99bOpZllUE5FMwsHCd7Loc8AAAE3SURBVFjD7dTbjoIwFIXh1QMHBwEBz2dnvf87TgNGRwd2m0xMNOG74ILQn9DdgFEvPc3jBM+qab5FkBmd8huPpnQ0AiRsWTxo2ErgZ8iel2m2zMsDjbkHDG/MPaAPGLYo6Q+wXAyuX5F7ZGx9Yc+bPQ5sZYjJ1VChIhlfP3cDxOx0d1VXxZpkhV6W12e+qsi6K++WxnVn0Q6Y3Gb8V8pWfYFzqfnbyq11Ms1WOnACO+vU2nTNJ2Vqd9GUnRn6KAZTY+DtA0oQECgyCLLCGzhBdPIGDETGG1BzCObqI8Y4Bv4dyGsjqHNvwEJkvYEEosQbiCGKvQEqLVCfMMYx4CyVYOkPRGcIztHrj/IEook3QPm3/t5j3DLYVtgfH2Gnjwx2RK8NA20wgIEwSDOAhqCJCoqKqMHoyQ9qUd+u50odwwAAAABJRU5ErkJggg==" />
-            ローンの詳細
+              貸款詳情
           </span>
         </div>
         <div class="sc-himrzO gnRAjo">
           <div>¥{{ formatNumber(ContractInfo.quota_useing) }}</div>
           <div>
             <span @click="$router.push('/aggrementInfo?id=' + ContractInfo.id)"><img alt=""
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAY1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+aRQ2gAAAAIHRSTlMAv0CA9S8LX1TknyseEN/WwpvqxbKolVpJNSSqjIlOR6mUndwAAADtSURBVFjD7dHZCsIwEIXhk6SbXd33Zd7/KbVQdaiJTgSRlvw3h9LyFRKEflqpH+3xRUdirfG5RJt7afvHmgNzAFVq7l0qC2DoWQNgxoElAMWejQVQxNJAmZpHWQloYqkPgIKlXAB0hx7DWtG9fgNAVACGACQn1W999gE0vaZ8gMwCTHyAckn9GjOsWxgDkGhHQqBoyFEdiwBDzpQI2LkBLQKwNY52g7nGEQB5NMnanbH1AeLug+K2U7ZewLTbBVsxgANFm3ZXFKVs5QCS/g7uGgMQgH8DSpQTkOYAch8gtwCbOYmrt7BUaXEVQqwrd4lYW65cyFIAAAAASUVORK5CYII=" />ローン契約書</span>
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAY1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+aRQ2gAAAAIHRSTlMAv0CA9S8LX1TknyseEN/WwpvqxbKolVpJNSSqjIlOR6mUndwAAADtSURBVFjD7dHZCsIwEIXhk6SbXd33Zd7/KbVQdaiJTgSRlvw3h9LyFRKEflqpH+3xRUdirfG5RJt7afvHmgNzAFVq7l0qC2DoWQNgxoElAMWejQVQxNJAmZpHWQloYqkPgIKlXAB0hx7DWtG9fgNAVACGACQn1W999gE0vaZ8gMwCTHyAckn9GjOsWxgDkGhHQqBoyFEdiwBDzpQI2LkBLQKwNY52g7nGEQB5NMnanbH1AeLug+K2U7ZewLTbBVsxgANFm3ZXFKVs5QCS/g7uGgMQgH8DSpQTkOYAch8gtwCbOYmrt7BUaXEVQqwrd4lYW65cyFIAAAAASUVORK5CYII=" />貸款協議</span>
           </div>
         </div>
         <div class="sc-gXmSlM lhjGoT">
-          <h2>お金を引き出す</h2>
+          <h2>提款</h2>
           <ul>
             <li>
               <span><img alt=""
                   src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAhFBMVEUAAABMX6pMYKtMX6pMX6pMYq1MX6tMXqpMX6tMX6pLXqlMX6pMX6tMYKpMXqpMX6tMXqpMX6pMX6pMX6pNXalMXqpMX6pMX6pLXKlLXapJZbBMX6pMX6pMX6pLX6pMX6pMX6pMYKtMXqpMX6pKWqtMX6pLX6pLX6tMYKtJW6tMZq1MX6pzET9FAAAAK3RSTlMAqlXAZRfM57KKgNqDcGFNo2taRjO4kYZJLQf69OLRxZ+XXTgmsZl1QCMQU492QgAAAalJREFUWMO11tluqzAUheHlAIEwJCGQeR56Oqz3f79TtReGOsbervrdRv/WVpAt48/smri8RMU+HatJNUsg8x6/sO/82sLXRx7xmdNqCx91QZvDJIHL4swhx9cdhtyXdDndYDc90MMaNmv6UZZ+Tl8FnllSAKYJJU5GX1Nmjr4ppSboWlCuRMeYAVrdxwzxz1hAqjUWCF1hzECt/BMsI3as8OVCbyOgMs9EKumRsOOOT42ox5txNaxEPRQ7xvhUyHstAT4Cem0GbAN6rQY2st481LGkNyigZN8hXvn3PJt3MYCRd88jELEnh55g9iZjgzTREzz6o/kfKOgJzp4RMKV1grvnHGhoneDuuQYetE5w94yBHa0T3D0bAJF1grvnDkBF2wR3/wLYjqPy6RkP3OrKo+f70MtAPfBw9BG+bKy/0yHHt4xh0gTfZgyTA3qF8AXCV8ihZWELaG1KsSm6RpTKf/nOu+CnihIZTDn9LfHMSPhKNb3RTw2beyH7fqZtRpfxAoNm2XAeQ5ON0Lnb5prStFc3+BupPXuiOoFQs6jKq4rUtaxuG3v9H9PT24aC84jqAAAAAElFTkSuQmCC" /></span>
               <div>
-                <div>ローン申し込みを送信<span>{{ Lost.start_time }}</span></div>
-                <div>ローン申し込みを送信されました。審査をお待ちください</div>
+                <div>提交貸款申請<span>{{ Lost.start_time }}</span></div>
+                <div>您的貸款申請已提交。請等待審核。</div>
               </div>
             </li>
             <li>
               <span><img alt=""
                   src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAhFBMVEUAAABMX6pMYKtMX6pMX6pMYq1MX6tMXqpMX6tMX6pLXqlMX6pMX6tMYKpMXqpMX6tMXqpMX6pMX6pMX6pNXalMXqpMX6pMX6pLXKlLXapJZbBMX6pMX6pMX6pLX6pMX6pMX6pMYKtMXqpMX6pKWqtMX6pLX6pLX6tMYKtJW6tMZq1MX6pzET9FAAAAK3RSTlMAqlXAZRfM57KKgNqDcGFNo2taRjO4kYZJLQf69OLRxZ+XXTgmsZl1QCMQU492QgAAAalJREFUWMO11tluqzAUheHlAIEwJCGQeR56Oqz3f79TtReGOsbervrdRv/WVpAt48/smri8RMU+HatJNUsg8x6/sO/82sLXRx7xmdNqCx91QZvDJIHL4swhx9cdhtyXdDndYDc90MMaNmv6UZZ+Tl8FnllSAKYJJU5GX1Nmjr4ppSboWlCuRMeYAVrdxwzxz1hAqjUWCF1hzECt/BMsI3as8OVCbyOgMs9EKumRsOOOT42ox5txNaxEPRQ7xvhUyHstAT4Cem0GbAN6rQY2st481LGkNyigZN8hXvn3PJt3MYCRd88jELEnh55g9iZjgzTREzz6o/kfKOgJzp4RMKV1grvnHGhoneDuuQYetE5w94yBHa0T3D0bAJF1grvnDkBF2wR3/wLYjqPy6RkP3OrKo+f70MtAPfBw9BG+bKy/0yHHt4xh0gTfZgyTA3qF8AXCV8ihZWELaG1KsSm6RpTKf/nOu+CnihIZTDn9LfHMSPhKNb3RTw2beyH7fqZtRpfxAoNm2XAeQ5ON0Lnb5prStFc3+BupPXuiOoFQs6jKq4rUtaxuG3v9H9PT24aC84jqAAAAAElFTkSuQmCC" /></span>
               <div>
-                <div>ローンが承認されました<span>{{ Lost.start_time }}</span></div>
+                <div>貸款已批准<span>{{ Lost.start_time }}</span></div>
                 <div>
-                  申し込みが完了しました。ローンの進行状況についてはカスタマー サービスにお問い合わせください。
+                  申請已完成。如需了解貸款進度，請聯繫客戶服務。
                 </div>
               </div>
             </li>
@@ -42,7 +42,7 @@
               <span><img alt=""
                   src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAPFBMVEUAAADZHgbZHgfZHgbYHgbYHQbXHQbYHgbYHgbYHgbYHgbYHwbZHQfYHQXXGwDfIADXHgXZHwfYHQfYHgZR1eX+AAAAE3RSTlMA3JuH3slB9OXSsX1yaBMIu5VO0U6tJQAAARlJREFUWMPtl0eSwzAMBM2oQMm2NP//6x65kpiAubrv01UMIMDXjwbR2TX4afJhtS7K0zMuzBLHOxkUMOk9FP9sBhXM9unn9wUNlr2Xt+hg2/kvunxbeY8BfD2PQWr5gEFCOX9gmKOUdxDgCudfXS1K7I/7t8gEy/1ObpAJsN3qx0gF5lpZCVIB0kVg5ALzP39CLsDZq8Es6NflrBHMOR+hESDmW6wTuLwFOkHehFUnWPNDoBOE/JLpBPltm3SCiRbQS6A3kT5G+iLRV5kuJr6cn2vQNpcIBfH6qIoxt2ddTKIbC9va6OZKt/cHFgJsc8RTj3oeg3h+zKMGvfBqcOhGPEldOnbcZz8c7JdnmNPeP132JL99P+r8ASAoqznBplqAAAAAAElFTkSuQmCC" /></span>
               <div>
-                <div>ローンが承認されました<span>{{ Lost.start_time }}</span></div>
+                <div>貸款已批准<span>{{ Lost.start_time }}</span></div>
                 <div>
                   <!--  ローンが承認されました。カスタマーサービスにご連絡して手続きをお問い合わせください。 -->
                   {{ remark }}
@@ -50,7 +50,7 @@
               </div>
             </li>
           </ul>
-          <div class="sc-cCsOjp XUXPN" @click="goLink()">カスタマーサービスに連絡</div>
+          <div class="sc-cCsOjp XUXPN" @click="goLink()">聯繫客戶服務</div>
         </div>
       </div>
     </div>
@@ -58,23 +58,23 @@
       <div class="sc-ftvSup dueZBn" style="opacity: 1"></div>
       <div class="sc-papXJ dGrcLk">
         <div class="sc-llJcti cpZJtI">
-          <h2>詳細をお借りしています</h2>
+          <h2>我借用詳細資料</h2>
           <ul class="info">
-            <li><span>毎月の元本</span><span>{{ addThousandsSeparator(Lost.ben_jin) }}</span></li>
-            <li><span>毎月の利息</span><span>{{ addThousandsSeparator(Lost.li_xi) }}</span></li>
-            <li><span>借入時間</span><span>{{ Lost.start_time }}</span></li>
-            <li><span>返済時期</span><span>{{ Lost.next_time }}</span></li>
-            <li><span>月利</span><span>0.4%</span></li>
+            <li><span>每月本金</span><span>{{ addThousandsSeparator(Lost.ben_jin) }}</span></li>
+            <li><span>每月利息</span><span>{{ addThousandsSeparator(Lost.li_xi) }}</span></li>
+            <li><span>借閱時間</span><span>{{ Lost.start_time }}</span></li>
+            <li><span>還款期限</span><span>{{ Lost.next_time }}</span></li>
+            <li><span>每月利息</span><span>0.4%</span></li>
           </ul>
-          <h3>各分割払いの返済時期</h3>
+          <h3>每期還款期限</h3>
           <ul class="list">
-            <li v-for="(item, index) in Lost.lists" :key="index"><span>ステージ{{ item.order }}: 返済:
+            <li v-for="(item, index) in Lost.lists" :key="index"><span>階段{{ item.order }}: 還款:
                 {{ addThousandsSeparator(item.ben_jin_li_xi)
                 }}</span><span>{{ item.date_time }}</span></li>
 
 
           </ul>
-          <div class="sc-iIPllB dpopni" @click="showe = false">戻る</div>
+          <div class="sc-iIPllB dpopni" @click="showe = false">返回</div>
         </div>
       </div>
     </div>
@@ -82,12 +82,12 @@
       <div class="sc-ftvSup dueZBn" style="opacity: 1"></div>
       <div class="sc-papXJ dGrcLk">
         <div class="sc-gicCDI hBvUOz">
-          <h2>お知らせ</h2>
+          <h2>通知</h2>
           <div>
-            {{ tips || 'ローンが承認されました。カスタマーサービスにご連絡して手続きをお問い合わせください。' }}
+            {{ tips || '貸款已批准。請聯繫客戶服務進行手續辦理。' }}
           </div>
           <div class="sc-ezWOiH fyqCL">
-            <span @click="show2 = false">キャンセル</span><span @click="goLink()">カスタマーサービス</span>
+            <span @click="show2 = false">取消</span><span @click="goLink()">客戶服務</span>
           </div>
         </div>
       </div>
@@ -116,8 +116,8 @@ export default {
     };
   },
   created() {
-    this.userInfo = { ...JSON.parse(window.localStorage.getItem('userInfo')) }
-    this.Select();
+    // this.userInfo = { ...JSON.parse(window.localStorage.getItem('userInfo')) }
+    // this.Select();
   },
   methods: {
     addThousandsSeparator(sb) {
