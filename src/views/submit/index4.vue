@@ -8,7 +8,7 @@
                             d="M970.496 543.829333l30.165333-30.165333-415.829333-415.914667a42.837333 42.837333 0 0 0-60.288 0 42.538667 42.538667 0 0 0 0 60.330667l355.413333 355.498667-355.413333 355.285333a42.496 42.496 0 0 0 0 60.288c16.64 16.64 43.861333 16.469333 60.288 0.042667l383.914667-383.701334 1.749333-1.664z"
                             fill="#3D3D3D" p-id="2998"></path>
                     </svg></span>
-                <div class="sc-ckMVTt ipKhVx">情報入力</div>
+                <div class="sc-ckMVTt ipKhVx">資料輸入</div>
             </div>
             <div class="sc-gFGZVQ gTnzTn fix-height"></div>
             <div v-if="form4Show">
@@ -30,37 +30,37 @@
                 <div v-show="show4" class="show">
 
                     <div class="d-flex">
-                        <p style="font-size: 1.6rem;padding: 0.8rem 1.6rem;padding-right: 0;">銀行名:</p>
-                        <div class="sc-jOhDuK iQSHss"><input placeholder="銀行名" v-model="bankInfo.bank_name" disabled></div>
+                        <p style="font-size: 1.6rem;padding: 0.8rem 1.6rem;padding-right: 0;">銀行名稱:</p>
+                        <div class="sc-jOhDuK iQSHss"><input placeholder="銀行名稱" v-model="bankInfo.bank_name" disabled></div>
 
                     </div>
                     <div class="d-flex">
-                        <p style="font-size: 1.6rem;padding: 0.8rem 1.6rem;padding-right: 0;">支店名:</p>
-                        <div class="sc-jOhDuK iQSHss"><input placeholder="支店名" v-model="bankInfo.branch_name" disabled>
+                        <p style="font-size: 1.6rem;padding: 0.8rem 1.6rem;padding-right: 0;">支行名稱:</p>
+                        <div class="sc-jOhDuK iQSHss"><input placeholder="支行名稱" v-model="bankInfo.branch_name" disabled>
                         </div>
 
                     </div>
                     <div class="d-flex">
-                        <p style="font-size: 1.6rem;padding: 0.8rem 1.6rem;padding-right: 0;">番号:</p>
-                        <div class="sc-jOhDuK iQSHss"><input placeholder="番号" v-model="bankInfo.bank_code" disabled>
+                        <p style="font-size: 1.6rem;padding: 0.8rem 1.6rem;padding-right: 0;">號碼:</p>
+                        <div class="sc-jOhDuK iQSHss"><input placeholder="號碼" v-model="bankInfo.bank_code" disabled>
                         </div>
 
 
                     </div>
                     <div class="d-flex">
-                        <p style="font-size: 1.6rem;padding: 0.8rem 1.6rem;padding-right: 0;">取引種類:</p>
-                        <div class="sc-jOhDuK iQSHss"><input placeholder="取引種類" v-model="bankInfo.qu_yin"></div>
+                        <p style="font-size: 1.6rem;padding: 0.8rem 1.6rem;padding-right: 0;">交易類型:</p>
+                        <div class="sc-jOhDuK iQSHss"><input placeholder="交易類型" v-model="bankInfo.qu_yin"></div>
 
                     </div>
                     <div class="d-flex">
-                        <p style="font-size: 1.6rem;padding: 0.8rem 1.6rem;padding-right: 0;">囗座番号:</p>
-                        <div class="sc-jOhDuK iQSHss"><input placeholder="囗座番号" v-model="bankInfo.kou_zuo" disabled>
+                        <p style="font-size: 1.6rem;padding: 0.8rem 1.6rem;padding-right: 0;">帳戶號碼:</p>
+                        <div class="sc-jOhDuK iQSHss"><input placeholder="帳戶號碼" v-model="bankInfo.kou_zuo" disabled>
                         </div>
 
                     </div>
 
                     <div class="d-flex" v-if="bankInfo.ming_qian">
-                        <p style="font-size: 1.6rem;padding: 0.8rem 1.6rem;padding-right: 0;">名前:</p>
+                        <p style="font-size: 1.6rem;padding: 0.8rem 1.6rem;padding-right: 0;">名稱:</p>
                         <div class="sc-jOhDuK iQSHss" v-if="bankInfo.ming_qian">
                             <div> {{ bankInfo.ming_qian }}</div>
                         </div>
@@ -71,7 +71,7 @@
 
 
 
-                <div class="sc-kIKDeO czsnHl" @click="goLink()">カスタマーサービスに連絡する</div>
+                <div class="sc-kIKDeO czsnHl" @click="goLink()">聯繫客服</div>
             </div>
         </div>
 
