@@ -94,11 +94,11 @@ export default {
   },
   mounted() {
     // 在 mounted 钩子中可以操作 DOM 元素
-    this.$nextTick(() => {
-      this.userInfo = JSON.parse(window.localStorage.getItem('userInfo'))
+    // this.$nextTick(() => {
+    //   this.userInfo = JSON.parse(window.localStorage.getItem('userInfo'))
 
-      // 在 DOM 更新后执行的操作
-    });
+    //   // 在 DOM 更新后执行的操作
+    // });
   },
   methods: {
     Getsystemconfig() {

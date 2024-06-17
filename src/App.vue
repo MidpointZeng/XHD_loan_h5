@@ -34,7 +34,7 @@ export default {
       //tabbar信息
       routeList: [
         {
-          name: "ホーム",
+          name: this.$t('b72'),
           path: "/home",
           active: 0,
           icon: {
@@ -43,7 +43,7 @@ export default {
           },
         },
         {
-          name: "私",
+          name: this.$t('b73'),
           path: "/user",
           active: 1,
           icon: {

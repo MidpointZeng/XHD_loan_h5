@@ -414,7 +414,7 @@ export default {
 .iQSHss {
     margin: 1.6rem;
     padding: 0.8rem 1.6rem;
-    border: 1px solid rgb(153, 153, 153);
+    border: 1px solid #396aa8;
     border-radius: 1rem;
 
     div,
@@ -428,7 +428,7 @@ export default {
 .dUwcBf {
     margin: 1.6rem;
     padding: 0.8rem 1.6rem;
-    border: 1px solid rgb(153, 153, 153);
+    border: 1px solid #396aa8;
     border-radius: 1rem;
 
     .selector {
