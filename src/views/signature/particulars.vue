@@ -2,47 +2,69 @@
   <div class="sc-hKMtZM gSsIyS">
     <div class="sc-eCYdqJ eSlzqF">
       <div class="sc-bZkfAO HoWLo">
-        <div class="sc-kLLXSd dqxVFP">貸款進度</div>
+        <div class="sc-kLLXSd dqxVFP" v-text="$t('a52')">貸款進度</div>
         <div class="sc-ikZpkk fDFQtg"></div>
         <div class="sc-jIZahH dTwvRZ">
-          <span>貸款金額（元）</span><span><img @click="showe = true" alt=""
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAbFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8+T+BWAAAAI3RSTlMAv4BAYKCRHpZtVRTm39HKr6p3Wkwq99bOpZllUE5FMwsHCd7Loc8AAAE3SURBVFjD7dTbjoIwFIXh1QMHBwEBz2dnvf87TgNGRwd2m0xMNOG74ILQn9DdgFEvPc3jBM+qab5FkBmd8huPpnQ0AiRsWTxo2ErgZ8iel2m2zMsDjbkHDG/MPaAPGLYo6Q+wXAyuX5F7ZGx9Yc+bPQ5sZYjJ1VChIhlfP3cDxOx0d1VXxZpkhV6W12e+qsi6K++WxnVn0Q6Y3Gb8V8pWfYFzqfnbyq11Ms1WOnACO+vU2nTNJ2Vqd9GUnRn6KAZTY+DtA0oQECgyCLLCGzhBdPIGDETGG1BzCObqI8Y4Bv4dyGsjqHNvwEJkvYEEosQbiCGKvQEqLVCfMMYx4CyVYOkPRGcIztHrj/IEook3QPm3/t5j3DLYVtgfH2Gnjwx2RK8NA20wgIEwSDOAhqCJCoqKqMHoyQ9qUd+u50odwwAAAABJRU5ErkJggg==" />
-              貸款詳情
+          <span  v-text="$t('a53')">貸款金額（元）</span
+          ><span
+            ><img
+              @click="showe = true"
+              alt=""
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAbFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8+T+BWAAAAI3RSTlMAv4BAYKCRHpZtVRTm39HKr6p3Wkwq99bOpZllUE5FMwsHCd7Loc8AAAE3SURBVFjD7dTbjoIwFIXh1QMHBwEBz2dnvf87TgNGRwd2m0xMNOG74ILQn9DdgFEvPc3jBM+qab5FkBmd8huPpnQ0AiRsWTxo2ErgZ8iel2m2zMsDjbkHDG/MPaAPGLYo6Q+wXAyuX5F7ZGx9Yc+bPQ5sZYjJ1VChIhlfP3cDxOx0d1VXxZpkhV6W12e+qsi6K++WxnVn0Q6Y3Gb8V8pWfYFzqfnbyq11Ms1WOnACO+vU2nTNJ2Vqd9GUnRn6KAZTY+DtA0oQECgyCLLCGzhBdPIGDETGG1BzCObqI8Y4Bv4dyGsjqHNvwEJkvYEEosQbiCGKvQEqLVCfMMYx4CyVYOkPRGcIztHrj/IEook3QPm3/t5j3DLYVtgfH2Gnjwx2RK8NA20wgIEwSDOAhqCJCoqKqMHoyQ9qUd+u50odwwAAAABJRU5ErkJggg=="
+            />
+            {{ $t('a54') }}
           </span>
         </div>
         <div class="sc-himrzO gnRAjo">
           <div>¥{{ formatNumber(ContractInfo.quota_useing) }}</div>
           <div>
-            <span @click="$router.push('/aggrementInfo?id=' + ContractInfo.id)"><img alt=""
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAY1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+aRQ2gAAAAIHRSTlMAv0CA9S8LX1TknyseEN/WwpvqxbKolVpJNSSqjIlOR6mUndwAAADtSURBVFjD7dHZCsIwEIXhk6SbXd33Zd7/KbVQdaiJTgSRlvw3h9LyFRKEflqpH+3xRUdirfG5RJt7afvHmgNzAFVq7l0qC2DoWQNgxoElAMWejQVQxNJAmZpHWQloYqkPgIKlXAB0hx7DWtG9fgNAVACGACQn1W999gE0vaZ8gMwCTHyAckn9GjOsWxgDkGhHQqBoyFEdiwBDzpQI2LkBLQKwNY52g7nGEQB5NMnanbH1AeLug+K2U7ZewLTbBVsxgANFm3ZXFKVs5QCS/g7uGgMQgH8DSpQTkOYAch8gtwCbOYmrt7BUaXEVQqwrd4lYW65cyFIAAAAASUVORK5CYII=" />貸款協議</span>
+            <span @click="$router.push('/aggrementInfo?id=' + ContractInfo.id)"
+              ><img
+                alt=""
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAY1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+aRQ2gAAAAIHRSTlMAv0CA9S8LX1TknyseEN/WwpvqxbKolVpJNSSqjIlOR6mUndwAAADtSURBVFjD7dHZCsIwEIXhk6SbXd33Zd7/KbVQdaiJTgSRlvw3h9LyFRKEflqpH+3xRUdirfG5RJt7afvHmgNzAFVq7l0qC2DoWQNgxoElAMWejQVQxNJAmZpHWQloYqkPgIKlXAB0hx7DWtG9fgNAVACGACQn1W999gE0vaZ8gMwCTHyAckn9GjOsWxgDkGhHQqBoyFEdiwBDzpQI2LkBLQKwNY52g7nGEQB5NMnanbH1AeLug+K2U7ZewLTbBVsxgANFm3ZXFKVs5QCS/g7uGgMQgH8DSpQTkOYAch8gtwCbOYmrt7BUaXEVQqwrd4lYW65cyFIAAAAASUVORK5CYII="
+              />            {{ $t('a60') }}</span
+            >
           </div>
         </div>
         <div class="sc-gXmSlM lhjGoT">
-          <h2>提款</h2>
+          <h2  v-text="$t('a55')">提款</h2>
           <ul>
             <li>
-              <span><img alt=""
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAhFBMVEUAAABMX6pMYKtMX6pMX6pMYq1MX6tMXqpMX6tMX6pLXqlMX6pMX6tMYKpMXqpMX6tMXqpMX6pMX6pMX6pNXalMXqpMX6pMX6pLXKlLXapJZbBMX6pMX6pMX6pLX6pMX6pMX6pMYKtMXqpMX6pKWqtMX6pLX6pLX6tMYKtJW6tMZq1MX6pzET9FAAAAK3RSTlMAqlXAZRfM57KKgNqDcGFNo2taRjO4kYZJLQf69OLRxZ+XXTgmsZl1QCMQU492QgAAAalJREFUWMO11tluqzAUheHlAIEwJCGQeR56Oqz3f79TtReGOsbervrdRv/WVpAt48/smri8RMU+HatJNUsg8x6/sO/82sLXRx7xmdNqCx91QZvDJIHL4swhx9cdhtyXdDndYDc90MMaNmv6UZZ+Tl8FnllSAKYJJU5GX1Nmjr4ppSboWlCuRMeYAVrdxwzxz1hAqjUWCF1hzECt/BMsI3as8OVCbyOgMs9EKumRsOOOT42ox5txNaxEPRQ7xvhUyHstAT4Cem0GbAN6rQY2st481LGkNyigZN8hXvn3PJt3MYCRd88jELEnh55g9iZjgzTREzz6o/kfKOgJzp4RMKV1grvnHGhoneDuuQYetE5w94yBHa0T3D0bAJF1grvnDkBF2wR3/wLYjqPy6RkP3OrKo+f70MtAPfBw9BG+bKy/0yHHt4xh0gTfZgyTA3qF8AXCV8ihZWELaG1KsSm6RpTKf/nOu+CnihIZTDn9LfHMSPhKNb3RTw2beyH7fqZtRpfxAoNm2XAeQ5ON0Lnb5prStFc3+BupPXuiOoFQs6jKq4rUtaxuG3v9H9PT24aC84jqAAAAAElFTkSuQmCC" /></span>
+              <span
+                ><img
+                  alt=""
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAhFBMVEUAAABMX6pMYKtMX6pMX6pMYq1MX6tMXqpMX6tMX6pLXqlMX6pMX6tMYKpMXqpMX6tMXqpMX6pMX6pMX6pNXalMXqpMX6pMX6pLXKlLXapJZbBMX6pMX6pMX6pLX6pMX6pMX6pMYKtMXqpMX6pKWqtMX6pLX6pLX6tMYKtJW6tMZq1MX6pzET9FAAAAK3RSTlMAqlXAZRfM57KKgNqDcGFNo2taRjO4kYZJLQf69OLRxZ+XXTgmsZl1QCMQU492QgAAAalJREFUWMO11tluqzAUheHlAIEwJCGQeR56Oqz3f79TtReGOsbervrdRv/WVpAt48/smri8RMU+HatJNUsg8x6/sO/82sLXRx7xmdNqCx91QZvDJIHL4swhx9cdhtyXdDndYDc90MMaNmv6UZZ+Tl8FnllSAKYJJU5GX1Nmjr4ppSboWlCuRMeYAVrdxwzxz1hAqjUWCF1hzECt/BMsI3as8OVCbyOgMs9EKumRsOOOT42ox5txNaxEPRQ7xvhUyHstAT4Cem0GbAN6rQY2st481LGkNyigZN8hXvn3PJt3MYCRd88jELEnh55g9iZjgzTREzz6o/kfKOgJzp4RMKV1grvnHGhoneDuuQYetE5w94yBHa0T3D0bAJF1grvnDkBF2wR3/wLYjqPy6RkP3OrKo+f70MtAPfBw9BG+bKy/0yHHt4xh0gTfZgyTA3qF8AXCV8ihZWELaG1KsSm6RpTKf/nOu+CnihIZTDn9LfHMSPhKNb3RTw2beyH7fqZtRpfxAoNm2XAeQ5ON0Lnb5prStFc3+BupPXuiOoFQs6jKq4rUtaxuG3v9H9PT24aC84jqAAAAAElFTkSuQmCC"
+              /></span>
               <div>
-                <div>提交貸款申請<span>{{ Lost.start_time }}</span></div>
-                <div>您的貸款申請已提交。請等待審核。</div>
+                <div>
+                  {{ $t('a56') }}<span>{{ Lost.start_time }}</span>
+                </div>
+                <div   v-text="$t('a57')">您的貸款申請已提交。請等待審核。</div>
               </div>
             </li>
             <li>
-              <span><img alt=""
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAhFBMVEUAAABMX6pMYKtMX6pMX6pMYq1MX6tMXqpMX6tMX6pLXqlMX6pMX6tMYKpMXqpMX6tMXqpMX6pMX6pMX6pNXalMXqpMX6pMX6pLXKlLXapJZbBMX6pMX6pMX6pLX6pMX6pMX6pMYKtMXqpMX6pKWqtMX6pLX6pLX6tMYKtJW6tMZq1MX6pzET9FAAAAK3RSTlMAqlXAZRfM57KKgNqDcGFNo2taRjO4kYZJLQf69OLRxZ+XXTgmsZl1QCMQU492QgAAAalJREFUWMO11tluqzAUheHlAIEwJCGQeR56Oqz3f79TtReGOsbervrdRv/WVpAt48/smri8RMU+HatJNUsg8x6/sO/82sLXRx7xmdNqCx91QZvDJIHL4swhx9cdhtyXdDndYDc90MMaNmv6UZZ+Tl8FnllSAKYJJU5GX1Nmjr4ppSboWlCuRMeYAVrdxwzxz1hAqjUWCF1hzECt/BMsI3as8OVCbyOgMs9EKumRsOOOT42ox5txNaxEPRQ7xvhUyHstAT4Cem0GbAN6rQY2st481LGkNyigZN8hXvn3PJt3MYCRd88jELEnh55g9iZjgzTREzz6o/kfKOgJzp4RMKV1grvnHGhoneDuuQYetE5w94yBHa0T3D0bAJF1grvnDkBF2wR3/wLYjqPy6RkP3OrKo+f70MtAPfBw9BG+bKy/0yHHt4xh0gTfZgyTA3qF8AXCV8ihZWELaG1KsSm6RpTKf/nOu+CnihIZTDn9LfHMSPhKNb3RTw2beyH7fqZtRpfxAoNm2XAeQ5ON0Lnb5prStFc3+BupPXuiOoFQs6jKq4rUtaxuG3v9H9PT24aC84jqAAAAAElFTkSuQmCC" /></span>
+              <span
+                ><img
+                  alt=""
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAhFBMVEUAAABMX6pMYKtMX6pMX6pMYq1MX6tMXqpMX6tMX6pLXqlMX6pMX6tMYKpMXqpMX6tMXqpMX6pMX6pMX6pNXalMXqpMX6pMX6pLXKlLXapJZbBMX6pMX6pMX6pLX6pMX6pMX6pMYKtMXqpMX6pKWqtMX6pLX6pLX6tMYKtJW6tMZq1MX6pzET9FAAAAK3RSTlMAqlXAZRfM57KKgNqDcGFNo2taRjO4kYZJLQf69OLRxZ+XXTgmsZl1QCMQU492QgAAAalJREFUWMO11tluqzAUheHlAIEwJCGQeR56Oqz3f79TtReGOsbervrdRv/WVpAt48/smri8RMU+HatJNUsg8x6/sO/82sLXRx7xmdNqCx91QZvDJIHL4swhx9cdhtyXdDndYDc90MMaNmv6UZZ+Tl8FnllSAKYJJU5GX1Nmjr4ppSboWlCuRMeYAVrdxwzxz1hAqjUWCF1hzECt/BMsI3as8OVCbyOgMs9EKumRsOOOT42ox5txNaxEPRQ7xvhUyHstAT4Cem0GbAN6rQY2st481LGkNyigZN8hXvn3PJt3MYCRd88jELEnh55g9iZjgzTREzz6o/kfKOgJzp4RMKV1grvnHGhoneDuuQYetE5w94yBHa0T3D0bAJF1grvnDkBF2wR3/wLYjqPy6RkP3OrKo+f70MtAPfBw9BG+bKy/0yHHt4xh0gTfZgyTA3qF8AXCV8ihZWELaG1KsSm6RpTKf/nOu+CnihIZTDn9LfHMSPhKNb3RTw2beyH7fqZtRpfxAoNm2XAeQ5ON0Lnb5prStFc3+BupPXuiOoFQs6jKq4rUtaxuG3v9H9PT24aC84jqAAAAAElFTkSuQmCC"
+              /></span>
               <div>
-                <div>貸款已批准<span>{{ Lost.start_time }}</span></div>
                 <div>
-                  申請已完成。如需了解貸款進度，請聯繫客戶服務。
+                  {{ $t('a58') }}<span>{{ Lost.start_time }}</span>
                 </div>
+                <div v-text="$t('a59')">申請已完成。如需了解貸款進度，請聯繫客戶服務。</div>
               </div>
             </li>
             <li v-if="Lost2 == true">
-              <span><img alt=""
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAPFBMVEUAAADZHgbZHgfZHgbYHgbYHQbXHQbYHgbYHgbYHgbYHgbYHwbZHQfYHQXXGwDfIADXHgXZHwfYHQfYHgZR1eX+AAAAE3RSTlMA3JuH3slB9OXSsX1yaBMIu5VO0U6tJQAAARlJREFUWMPtl0eSwzAMBM2oQMm2NP//6x65kpiAubrv01UMIMDXjwbR2TX4afJhtS7K0zMuzBLHOxkUMOk9FP9sBhXM9unn9wUNlr2Xt+hg2/kvunxbeY8BfD2PQWr5gEFCOX9gmKOUdxDgCudfXS1K7I/7t8gEy/1ObpAJsN3qx0gF5lpZCVIB0kVg5ALzP39CLsDZq8Es6NflrBHMOR+hESDmW6wTuLwFOkHehFUnWPNDoBOE/JLpBPltm3SCiRbQS6A3kT5G+iLRV5kuJr6cn2vQNpcIBfH6qIoxt2ddTKIbC9va6OZKt/cHFgJsc8RTj3oeg3h+zKMGvfBqcOhGPEldOnbcZz8c7JdnmNPeP132JL99P+r8ASAoqznBplqAAAAAAElFTkSuQmCC" /></span>
+              <span
+                ><img
+                  alt=""
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAPFBMVEUAAADZHgbZHgfZHgbYHgbYHQbXHQbYHgbYHgbYHgbYHgbYHwbZHQfYHQXXGwDfIADXHgXZHwfYHQfYHgZR1eX+AAAAE3RSTlMA3JuH3slB9OXSsX1yaBMIu5VO0U6tJQAAARlJREFUWMPtl0eSwzAMBM2oQMm2NP//6x65kpiAubrv01UMIMDXjwbR2TX4afJhtS7K0zMuzBLHOxkUMOk9FP9sBhXM9unn9wUNlr2Xt+hg2/kvunxbeY8BfD2PQWr5gEFCOX9gmKOUdxDgCudfXS1K7I/7t8gEy/1ObpAJsN3qx0gF5lpZCVIB0kVg5ALzP39CLsDZq8Es6NflrBHMOR+hESDmW6wTuLwFOkHehFUnWPNDoBOE/JLpBPltm3SCiRbQS6A3kT5G+iLRV5kuJr6cn2vQNpcIBfH6qIoxt2ddTKIbC9va6OZKt/cHFgJsc8RTj3oeg3h+zKMGvfBqcOhGPEldOnbcZz8c7JdnmNPeP132JL99P+r8ASAoqznBplqAAAAAAElFTkSuQmCC"
+              /></span>
               <div>
-                <div>貸款已批准<span>{{ Lost.start_time }}</span></div>
+                <div>
+                  {{ $t('a61') }}<span>{{ Lost.start_time }}</span>
+                </div>
                 <div>
                   <!--  ローンが承認されました。カスタマーサービスにご連絡して手続きをお問い合わせください。 -->
                   {{ remark }}
@@ -50,7 +72,7 @@
               </div>
             </li>
           </ul>
-          <div class="sc-cCsOjp XUXPN" @click="goLink()">聯繫客戶服務</div>
+          <div class="sc-cCsOjp XUXPN" @click="goLink()"  v-text="$t('a62')">聯繫客戶服務</div>
         </div>
       </div>
     </div>
@@ -58,23 +80,34 @@
       <div class="sc-ftvSup dueZBn" style="opacity: 1"></div>
       <div class="sc-papXJ dGrcLk">
         <div class="sc-llJcti cpZJtI">
-          <h2>我借用詳細資料</h2>
+          <h2  v-text="$t('a63')">我借用詳細資料</h2>
           <ul class="info">
-            <li><span>每月本金</span><span>{{ addThousandsSeparator(Lost.ben_jin) }}</span></li>
-            <li><span>每月利息</span><span>{{ addThousandsSeparator(Lost.li_xi) }}</span></li>
-            <li><span>借閱時間</span><span>{{ Lost.start_time }}</span></li>
-            <li><span>還款期限</span><span>{{ Lost.next_time }}</span></li>
-            <li><span>每月利息</span><span>0.4%</span></li>
+            <li>
+              <span v-text="$t('a64')">每月本金</span
+              ><span>{{ addThousandsSeparator(Lost.ben_jin) }}</span>
+            </li>
+            <li>
+              <span v-text="$t('a65')">每月利息</span
+              ><span>{{ addThousandsSeparator(Lost.li_xi) }}</span>
+            </li>
+            <li>
+              <span v-text="$t('a66')">借閱時間</span><span>{{ Lost.start_time }}</span>
+            </li>
+            <li>
+              <span v-text="$t('a67')">還款期限</span><span>{{ Lost.next_time }}</span>
+            </li>
+            <li><span v-text="$t('a65')">每月利息</span><span>0.4%</span></li>
           </ul>
-          <h3>每期還款期限</h3>
+          <h3 v-text="$t('a69')">每期還款期限</h3>
           <ul class="list">
-            <li v-for="(item, index) in Lost.lists" :key="index"><span>階段{{ item.order }}: 還款:
-                {{ addThousandsSeparator(item.ben_jin_li_xi)
-                }}</span><span>{{ item.date_time }}</span></li>
-
-
+            <li v-for="(item, index) in Lost.lists" :key="index">
+              <span
+                >{{$t('a70')}}{{ item.order }}: {{$t('a71')}}:
+                {{ addThousandsSeparator(item.ben_jin_li_xi) }}</span
+              ><span>{{ item.date_time }}</span>
+            </li>
           </ul>
-          <div class="sc-iIPllB dpopni" @click="showe = false">返回</div>
+          <div class="sc-iIPllB dpopni" @click="showe = false" v-text="$t('a72')">返回</div>
         </div>
       </div>
     </div>
@@ -82,12 +115,13 @@
       <div class="sc-ftvSup dueZBn" style="opacity: 1"></div>
       <div class="sc-papXJ dGrcLk">
         <div class="sc-gicCDI hBvUOz">
-          <h2>通知</h2>
+          <h2  v-text="$t('a73')">通知</h2>
           <div>
-            {{ tips || '貸款已批准。請聯繫客戶服務進行手續辦理。' }}
+            {{ tips || $t('a74') }}
           </div>
           <div class="sc-ezWOiH fyqCL">
-            <span @click="show2 = false">取消</span><span @click="goLink()">客戶服務</span>
+            <span @click="show2 = false" v-text="$t('a75')">取消</span
+            ><span @click="goLink()" v-text="$t('a76')">客戶服務</span>
           </div>
         </div>
       </div>
@@ -96,7 +130,7 @@
 </template>
 
 <script>
-import User from '@/api/user.js'
+import User from "@/api/user.js";
 export default {
   name: "bankaccount",
   data() {
@@ -105,14 +139,14 @@ export default {
       show2: false,
       Lost: [],
       Lost2: false,
-      url: '',
-      tips: '',
+      url: "",
+      tips: "",
       userInfo: {
-        userId: '',
-        account: '',
+        userId: "",
+        account: "",
       },
-      remark: '',
-      ContractInfo: {}
+      remark: "",
+      ContractInfo: {},
     };
   },
   created() {
@@ -121,7 +155,7 @@ export default {
   },
   methods: {
     addThousandsSeparator(sb) {
-      return new Intl.NumberFormat('en-US').format(sb);
+      return new Intl.NumberFormat("en-US").format(sb);
     },
     Select() {
       // User.GetContractInfo({
@@ -142,12 +176,12 @@ export default {
       //   // this.Lost2=res.data;
       // });
       User.getUserContract({
-        userId: this.userInfo.userId
-      }).then(res => {
-        this.ContractInfo = res.data
+        userId: this.userInfo.userId,
+      }).then((res) => {
+        this.ContractInfo = res.data;
         User.GetContractInfo({
-          contractId: res.data.id
-        }).then(res => {
+          contractId: res.data.id,
+        }).then((res) => {
           // console.log(res)
           this.Lost = res.data;
         });
@@ -160,23 +194,22 @@ export default {
         }
         if (res.data.heTong_status == 0) {
           this.Lost2 = false;
-
         }
         // console.log(res)
         // this.Lost2=res.data;
-        this.remark = res.data.remark
+        this.remark = res.data.remark;
       });
       // User.SleKefu({}).then(res=>{
       //   this.url = res.data.rows[0].kefu_url
       // })
-      User.Getsystemconfig().then(res => {
-        this.url = res.data.ke_fu
-        this.tips = res.data.sptgContent
-      })
+      User.Getsystemconfig().then((res) => {
+        this.url = res.data.ke_fu;
+        this.tips = res.data.sptgContent;
+      });
     },
     goLink() {
       // window.location.href = this.url
-      window.open(this.url, '_blank')
+      window.open(this.url, "_blank");
     },
     formatNumber(amount) {
       // 将数字转换为字符串
@@ -201,7 +234,6 @@ export default {
       // 添加回小数部分并返回
       return formattedAmount + decimalPart;
     },
-
   },
 };
 </script>
@@ -219,7 +251,7 @@ export default {
   font-size: 2.3rem;
 }
 
-.hBvUOz h2+div {
+.hBvUOz h2 + div {
   font-size: 1.5rem;
   padding: 3rem 1rem 2rem;
   color: rgb(92, 92, 92);
@@ -235,18 +267,18 @@ export default {
   text-align: center;
 }
 
-.fyqCL>span:first-child {
+.fyqCL > span:first-child {
   color: var(--system-color);
   border: 1px solid var(--system-color);
 }
 
-.fyqCL>span:last-child {
+.fyqCL > span:last-child {
   color: rgb(255, 255, 255);
   background: var(--system-color);
   margin-left: 1rem;
 }
 
-.fyqCL>span {
+.fyqCL > span {
   padding: 1.2rem 1.5rem;
   border-radius: 2.6rem;
   background: rgb(255, 255, 255);
@@ -313,15 +345,15 @@ export default {
   font-size: 1.4rem;
 }
 
-.cpZJtI .info li>span:first-child {
+.cpZJtI .info li > span:first-child {
   color: rgb(122, 122, 122);
 }
 
-.cpZJtI .info li>span:last-child {
+.cpZJtI .info li > span:last-child {
   text-align: right;
 }
 
-.cpZJtI .info li>span {
+.cpZJtI .info li > span {
   flex: 1 1 0%;
 }
 
@@ -339,11 +371,9 @@ export default {
   max-height: 20rem;
   overflow: hidden auto;
   width: calc(100% + 2rem);
-
-
 }
 
-.cpZJtI .list>li {
+.cpZJtI .list > li {
   display: flex;
   padding-right: 2rem;
 }
@@ -359,7 +389,7 @@ export default {
   font-weight: 600;
 }
 
-.cpZJtI .list>li>span:first-child {
+.cpZJtI .list > li > span:first-child {
   flex: 1 1 0%;
 }
 
@@ -416,11 +446,11 @@ export default {
   backdrop-filter: blur(5px);
 }
 
-.dTwvRZ>span:last-child {
+.dTwvRZ > span:last-child {
   float: right;
 }
 
-.dTwvRZ>span:last-child img {
+.dTwvRZ > span:last-child img {
   width: 2.5rem;
   margin-right: 0.3rem;
 }
@@ -444,16 +474,16 @@ img {
   font-weight: 600;
 }
 
-.gnRAjo>div:first-child {
+.gnRAjo > div:first-child {
   font-size: 2.8rem;
 }
 
-.gnRAjo>div:nth-child(2) {
+.gnRAjo > div:nth-child(2) {
   font-size: 2rem;
   margin-top: 0.3rem;
 }
 
-.gnRAjo>div:nth-child(2) img {
+.gnRAjo > div:nth-child(2) img {
   width: 2.4rem;
   margin-right: 0.3rem;
 }
@@ -480,7 +510,7 @@ p {
   margin: 0;
 }
 
-.gnRAjo>div:nth-child(2) {
+.gnRAjo > div:nth-child(2) {
   font-size: 2rem;
   margin-top: 0.3rem;
 }
@@ -494,7 +524,7 @@ p {
   display: flex;
 }
 
-.lhjGoT ul li>span {
+.lhjGoT ul li > span {
   width: 3rem;
   margin-right: 1rem;
   display: flex;
@@ -503,25 +533,25 @@ p {
   flex-direction: column;
 }
 
-.lhjGoT ul li>span img {
+.lhjGoT ul li > span img {
   object-fit: contain;
 }
 
-.lhjGoT ul li>div {
+.lhjGoT ul li > div {
   flex: 1 1 0%;
 }
 
-.lhjGoT ul li>div>div:first-child {
+.lhjGoT ul li > div > div:first-child {
   font-size: 1.8rem;
 }
 
-.lhjGoT ul li>div>div:first-child span {
+.lhjGoT ul li > div > div:first-child span {
   font-size: 1.3rem;
   margin-left: 2rem;
   white-space: nowrap;
 }
 
-.lhjGoT ul li>div>div:last-child {
+.lhjGoT ul li > div > div:last-child {
   margin-top: 1rem;
   font-size: 1.2rem;
   color: rgb(102, 102, 102);

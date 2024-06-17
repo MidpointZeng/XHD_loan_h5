@@ -8,7 +8,7 @@
                             d="M970.496 543.829333l30.165333-30.165333-415.829333-415.914667a42.837333 42.837333 0 0 0-60.288 0 42.538667 42.538667 0 0 0 0 60.330667l355.413333 355.498667-355.413333 355.285333a42.496 42.496 0 0 0 0 60.288c16.64 16.64 43.861333 16.469333 60.288 0.042667l383.914667-383.701334 1.749333-1.664z"
                             fill="#3D3D3D" p-id="2998"></path>
                     </svg></span>
-                <div class="sc-ckMVTt ipKhVx">資訊輸入</div>
+                <div class="sc-ckMVTt ipKhVx"    v-text="$t('a78')" >資訊輸入</div>
             </div>
             <div class="sc-gFGZVQ gTnzTn fix-height"></div>
             <div v-if="form1Show">
@@ -29,13 +29,13 @@
                     </svg>
                 </div>
                 <div v-show="show1">
-                    <div class="sc-jOhDuK iQSHss"><input placeholder="請輸入你的名字" v-model="form1.name"></div>
-                    <div class="sc-jOhDuK iQSHss"><input placeholder="請輸入您的年齡" v-model="form1.age"></div>
+                    <div class="sc-jOhDuK iQSHss"><input :placeholder="$t('a79')" v-model="form1.name"></div>
+                    <div class="sc-jOhDuK iQSHss"><input :accept="$t('a80')" v-model="form1.age"></div>
                     <div class="sc-hlnMnd dUwcBf">
                         <div class="sc-GVOUr iItKtQ selector">
                             <div class="sc-fXynhf jQGPhK" @click="bDWjLjShow = true">
                                 <div class="sc-dwLEzm " :class="{ 'iDnLzP': !form1.sex }">{{ form1.sex ? form1.sex :
-                                    '請選擇性別'
+                                   $t('a81')
                                 }}</div><svg t="1659509597911" class="icon" viewBox="0 0 1024 1024"
                                     xmlns="http://www.w3.org/2000/svg" p-id="2997" width="200" height="200">
                                     <path
@@ -47,23 +47,23 @@
                                 <div class="sc-ftvSup dueZBn" style="opacity: 1;"></div>
                                 <div class="sc-papXJ dGrcLk">
                                     <ul>
-                                        <div @click="bDWjLjShow = false"><span>關閉</span></div>
-                                        <li class="active" @click="form1.sex = '男性', bDWjLjShow = false">男性</li>
-                                        <li class="" @click="form1.sex = '女士', bDWjLjShow = false">女士</li>
+                                        <div @click="bDWjLjShow = false"><span    v-text="$t('a82')" >關閉</span></div>
+                                        <li class="active" @click="form1.sex = $t('a83'), bDWjLjShow = false"  v-text="$t('a83')">男性</li>
+                                        <li class="" @click="form1.sex = $t('a84'), bDWjLjShow = false"  v-text="$t('a84')">女士</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
 
                     </div>
-                    <div class="sc-jOhDuK iQSHss"><input placeholder="請輸入您的電子郵件地址" v-model="form1.email"></div>
-                    <div class="sc-jOhDuK iQSHss"><input placeholder="請輸入您目前的地址" v-model="form1.address"></div>
+                    <div class="sc-jOhDuK iQSHss"><input :placeholder="$t('a85')" v-model="form1.email"></div>
+                    <div class="sc-jOhDuK iQSHss"><input :placeholder="$t('a86')" v-model="form1.address"></div>
                     <div class="sc-hlnMnd dUwcBf">
                         <div class="sc-GVOUr iItKtQ selector">
                             <div class="sc-fXynhf jQGPhK" @click="bDWjLjShow2 = true">
                                 <div class="sc-dwLEzm" :class="{ 'iDnLzP': !form1.marriage_status }">{{
                                     form1.marriage_status ?
-                                    form1.marriage_status : '婚姻狀況選項' }} </div><svg t="1659509597911" class="icon"
+                                    form1.marriage_status : $t('a87') }} </div><svg t="1659509597911" class="icon"
                                     viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" p-id="2997" width="200"
                                     height="200">
                                     <path
@@ -75,11 +75,11 @@
                                 <div class="sc-ftvSup dueZBn" style="opacity: 1;"></div>
                                 <div class="sc-papXJ dGrcLk">
                                     <ul>
-                                        <div @click="bDWjLjShow2 = false"><span>關閉</span></div>
-                                        <li class="active" @click="form1.marriage_status = '離婚', bDWjLjShow2 = false">離婚
+                                        <div @click="bDWjLjShow2 = false"><span  v-text="$t('a82')" >關閉</span></div>
+                                        <li class="active" @click="form1.marriage_status = $t('a88'), bDWjLjShow2 = false"  v-text="$t('a88')">離婚
                                         </li>
-                                        <li class="" @click="form1.marriage_status = '未婚', bDWjLjShow2 = false">未婚</li>
-                                        <li class="" @click="form1.marriage_status = '已婚', bDWjLjShow2 = false">已婚</li>
+                                        <li class="" @click="form1.marriage_status = $t('a89'), bDWjLjShow2 = false"  v-text="$t('a89')">未婚</li>
+                                        <li class="" @click="form1.marriage_status = $t('a90'), bDWjLjShow2 = false"  v-text="$t('a90')">已婚</li>
                                     </ul>
                                 </div>
                             </div>
@@ -91,7 +91,7 @@
                                 <div class="sc-dwLEzm " :class="{ 'iDnLzP': !form1.degree }">{{ form1.degree ?
                                     form1.degree
                                     :
-                                    '可選教育背景' }} </div><svg t="1659509597911" class="icon" viewBox="0 0 1024 1024"
+                                    $t('a91') }} </div><svg t="1659509597911" class="icon" viewBox="0 0 1024 1024"
                                     xmlns="http://www.w3.org/2000/svg" p-id="2997" width="200" height="200">
                                     <path
                                         d="M970.496 543.829333l30.165333-30.165333-415.829333-415.914667a42.837333 42.837333 0 0 0-60.288 0 42.538667 42.538667 0 0 0 0 60.330667l355.413333 355.498667-355.413333 355.285333a42.496 42.496 0 0 0 0 60.288c16.64 16.64 43.861333 16.469333 60.288 0.042667l383.914667-383.701334 1.749333-1.664z"
@@ -102,18 +102,18 @@
                                 <div class="sc-ftvSup dueZBn" style="opacity: 1;"></div>
                                 <div class="sc-papXJ dGrcLk">
                                     <ul>
-                                        <div @click="bDWjLjShow3 = false"><span>關閉</span></div>
-                                        <li class="active" @click="form1.degree = '博士號', bDWjLjShow3 = false">博士號</li>
-                                        <li class="" @click="form1.degree = '修士號', bDWjLjShow3 = false">修士號</li>
-                                        <li class="" @click="form1.degree = '學士號', bDWjLjShow3 = false">學士號</li>
-                                        <li class="" @click="form1.degree = '高中學歷', bDWjLjShow3 = false">高中學歷</li>
+                                        <div @click="bDWjLjShow3 = false"><span v-text="$t('a82')" >關閉</span></div>
+                                        <li class="active" @click="form1.degree = $t('a92'), bDWjLjShow3 = false" v-text="$t('a92')">博士號</li>
+                                        <li class="" @click="form1.degree = $t('a93'), bDWjLjShow3 = false" v-text="$t('a93')">修士號</li>
+                                        <li class="" @click="form1.degree = $t('a94'), bDWjLjShow3 = false" v-text="$t('a94')">學士號</li>
+                                        <li class="" @click="form1.degree = $t('a95'), bDWjLjShow3 = false" v-text="$t('a95')">高中學歷</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="sc-eKBdFk icUshI"></div>
-                    <div class="sc-kIKDeO czsnHl" @click="setUserInfo()">確認個人資訊</div>
+                    <div class="sc-kIKDeO czsnHl" @click="setUserInfo()" v-text="$t('a96')">確認個人資訊</div>
                 </div>
             </div>
 
@@ -139,7 +139,7 @@
                             <div class="sc-fXynhf jQGPhK" @click="bDWjLjShow4 = true">
                                 <div class="sc-dwLEzm" :class="{ 'iDnLzP': !form2.job_option_type }">{{
                                     form2.job_option_type ? form2.job_option_type :
-                                    '工作選項類型'
+                                    $t('a97')
                                 }} </div><svg t="1659509597911" class="icon" viewBox="0 0 1024 1024"
                                     xmlns="http://www.w3.org/2000/svg" p-id="2997" width="200" height="200">
                                     <path
@@ -151,10 +151,10 @@
                                 <div class="sc-ftvSup dueZBn" style="opacity: 1;"></div>
                                 <div class="sc-papXJ dGrcLk">
                                     <ul>
-                                        <div @click="bDWjLjShow4 = false"><span>關閉</span></div>
-                                        <li class="active" @click="form2.job_option_type = '自有公司', bDWjLjShow4 = false">
+                                        <div @click="bDWjLjShow4 = false"><span v-text="$t('a82')" >關閉</span></div>
+                                        <li v-text="$t('a98')" class="active" @click="form2.job_option_type = $t('a98'), bDWjLjShow4 = false">
                                             自有公司</li>
-                                        <li class="" @click="form2.job_option_type = '辦公室職員', bDWjLjShow4 = false">
+                                        <li v-text="$t('a99')" class="" @click="form2.job_option_type = $t('a99'), bDWjLjShow4 = false">
                                             辦公室職員
                                         </li>
                                     </ul>
@@ -167,7 +167,7 @@
                             <div class="sc-fXynhf jQGPhK" @click="bDWjLjShow5 = true">
                                 <div class="sc-dwLEzm" :class="{ 'iDnLzP': !form2.total_option_years }">{{
                                     form2.total_option_years ? form2.total_option_years :
-                                    '選項的總營運年限'
+                                    $t('a100')
                                 }} </div><svg t="1659509597911" class="icon" viewBox="0 0 1024 1024"
                                     xmlns="http://www.w3.org/2000/svg" p-id="2997" width="200" height="200">
                                     <path
@@ -179,11 +179,11 @@
                                 <div class="sc-ftvSup dueZBn" style="opacity: 1;"></div>
                                 <div class="sc-papXJ dGrcLk">
                                     <ul @click="bDWjLjShow5 = false">
-                                        <div @click.stop="bDWjLjShow5 = false"><span>關閉</span></div>
+                                        <div @click.stop="bDWjLjShow5 = false"><span v-text="$t('a82')" >關閉</span></div>
                                         <li class="active" @click="form2.total_option_years = '0 - 1'">0 - 1</li>
                                         <li class="" @click="form2.total_option_years = '1 - 3'">1 - 3</li>
                                         <li class="" @click="form2.total_option_years = '3 - 5'">3 - 5</li>
-                                        <li class="" @click="form2.total_option_years = '5個或更多'">5個或更多</li>
+                                        <li    v-text="$t('a101')" class="" @click="form2.total_option_years = $t('a101')">5個或更多</li>
                                     </ul>
                                 </div>
                             </div>
@@ -194,7 +194,7 @@
                             <div class="sc-fXynhf jQGPhK" @click="bDWjLjShow6 = true">
                                 <div class="sc-dwLEzm " :class="{ 'iDnLzP': !form2.monthly_option_income }">{{
                                     form2.monthly_option_income ? form2.monthly_option_income :
-                                    '可選月收入'
+                                    $t('a102')
                                 }} </div><svg t="1659509597911" class="icon" viewBox="0 0 1024 1024"
                                     xmlns="http://www.w3.org/2000/svg" p-id="2997" width="200" height="200">
                                     <path
@@ -206,7 +206,7 @@
                                 <div class="sc-ftvSup dueZBn" style="opacity: 1;"></div>
                                 <div class="sc-papXJ dGrcLk">
                                     <ul @click="bDWjLjShow6 = false">
-                                        <div @click="bDWjLjShow6 = false"><span>關閉</span></div>
+                                        <div @click="bDWjLjShow6 = false"><span  v-text="$t('a82')">關閉</span></div>
                                         <li class="active" @click="form2.monthly_option_income = '0 - 14999'">0 - 14999
                                         </li>
                                         <li class="" @click="form2.monthly_option_income = '15000 - 24999'">15000 -
@@ -218,7 +218,7 @@
                                         <li class="" @click="form2.monthly_option_income = '35000 - 44999'">35000 -
                                             44999
                                         </li>
-                                        <li class="" @click="form2.monthly_option_income = '超過45000'">超過45000</li>
+                                        <li   v-text="$t('a103')"  class="" @click="form2.monthly_option_income =   $t('a103')">超過45000</li>
                                     </ul>
                                 </div>
                             </div>
@@ -229,7 +229,7 @@
                             <div class="sc-fXynhf jQGPhK" @click="bDWjLjShow7 = true">
                                 <div class="sc-dwLEzm" :class="{ 'iDnLzP': !form2.monthly_household_income }">{{
                                     form2.monthly_household_income ? form2.monthly_household_income :
-                                    '家庭月收入'
+                                    $t('a104')
                                 }} </div><svg t="1659509597911" class="icon" viewBox="0 0 1024 1024"
                                     xmlns="http://www.w3.org/2000/svg" p-id="2997" width="200" height="200">
                                     <path
@@ -241,7 +241,7 @@
                                 <div class="sc-ftvSup dueZBn" style="opacity: 1;"></div>
                                 <div class="sc-papXJ dGrcLk">
                                     <ul @click="bDWjLjShow7 = false">
-                                        <div @click="bDWjLjShow7 = false"><span>關閉</span></div>
+                                        <div @click="bDWjLjShow7 = false"><span   v-text="$t('a82')">關閉</span></div>
                                         <li class="active" @click="form2.monthly_household_income = '0 - 24999'">0 -
                                             24999
                                         </li>
@@ -254,13 +254,13 @@
                                         <li class="" @click="form2.monthly_household_income = '45000 - 54999'">45000 -
                                             54999
                                         </li>
-                                        <li class="" @click="form2.monthly_household_income = '55000以上'">55000以上</li>
+                                        <li    v-text="$t('a105')" class="" @click="form2.monthly_household_income = $t('a105')">55000以上</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="sc-kIKDeO czsnHl" @click="setfamily()">確認工作資訊</div>
+                    <div class="sc-kIKDeO czsnHl"  v-text="$t('a106')" @click="setfamily()">確認工作資訊</div>
                 </div>
             </div>
             <div v-if="form3Show">
@@ -286,14 +286,14 @@
                     <div class="sc-jOhDuK iQSHss">
                         <div>+81 {{ form3.account }}</div>
                     </div>
-                    <div class="sc-jOhDuK iQSHss"><input placeholder="銀行名" v-model="form3.bank_name"></div>
-                    <div class="sc-jOhDuK iQSHss"><input placeholder="銀行代碼" v-model="form3.bank_code"></div>
-                    <div class="sc-jOhDuK iQSHss"><input placeholder="分店名稱" v-model="form3.bank_Branch_name"></div>
+                    <div class="sc-jOhDuK iQSHss"><input :placeholder="$t('a107')" v-model="form3.bank_name"></div>
+                    <div class="sc-jOhDuK iQSHss"><input :placeholder="$t('a108')" v-model="form3.bank_code"></div>
+                    <div class="sc-jOhDuK iQSHss"><input :placeholder="$t('a109')" v-model="form3.bank_Branch_name"></div>
                     <!-- <div class="sc-jOhDuK iQSHss"><input placeholder="支店番号" v-model="form3.bank_Branch_code" ></div> -->
-                    <div class="sc-jOhDuK iQSHss"><input placeholder="交易類型" v-model="form3.trade_type"></div>
-                    <div class="sc-jOhDuK iQSHss"><input placeholder="生肖數字" v-model="form3.bank_card_number"></div>
-                    <div class="sc-jOhDuK iQSHss"><input placeholder="帳號名稱（型）" v-model="form3.account_name"></div>
-                    <div class="sc-kIKDeO czsnHl" @click="setbankinfo()">驗證銀行訊息</div>
+                    <div class="sc-jOhDuK iQSHss"><input :placeholder="$t('a110')" v-model="form3.trade_type"></div>
+                    <div class="sc-jOhDuK iQSHss"><input :placeholder="$t('a111')" v-model="form3.bank_card_number"></div>
+                    <div class="sc-jOhDuK iQSHss"><input :placeholder="$t('a112')" v-model="form3.account_name"></div>
+                    <div    v-text="$t('a113')"  class="sc-kIKDeO czsnHl" @click="setbankinfo()">驗證銀行訊息</div>
                 </div>
             </div>
 
@@ -438,12 +438,11 @@ export default {
 
             User.setuserInfo(params).then(res => {
                 if (res.success) {
-                    Toast('個人情報の提出成功');
+                    Toast(this.$t('a114'));
 
 
                     fbq('track', 'AddToCart');
 
-                    console.log("锚点代码执行成功 type:AddToCart");
                     
                     window.localStorage.setItem('userInfo1', JSON.stringify(this.form1))
 
@@ -464,7 +463,7 @@ export default {
         },
         setfamily() {
             if (this.areAllFieldsEmpty(this.form2)) {
-                return Toast('作品情報をご入力ください');
+                return Toast(this.$t('a115'));
             }
             const params = {
                 ...this.form2,
@@ -473,7 +472,7 @@ export default {
 
             User.setfamily(params).then(res => {
                 if (res.success) {
-                    Toast('作品情報の提出成功');
+                    Toast(this.$t('a116'));
                     window.localStorage.setItem('userInfo2', JSON.stringify(this.form2))
 
 
@@ -494,7 +493,7 @@ export default {
         },
         setbankinfo() {
             if (this.areAllFieldsEmpty(this.form3)) {
-                return Toast('銀行情報をご入力ください');
+                return  Toast(this.$t('a117'));
             }
             const params = {
                 ...this.form3,
@@ -503,7 +502,7 @@ export default {
 
             User.setbankinfo(params).then(res => {
                 if (res.success) {
-                    Toast('銀行情報の提出成功');
+                    Toast(this.$t('a118'));
                     window.localStorage.setItem('userInfo3', JSON.stringify(this.form3))
                     if (!this.form2Show && !this.form2Show) {
                         setTimeout(() => {

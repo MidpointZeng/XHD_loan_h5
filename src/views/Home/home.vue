@@ -13,48 +13,48 @@
               :</span></span>
           <div><span>{{ tips }}</span></div>
         </div>
-        <h3 class="sc-dmRaPn fPIbLV">最大貸款可能額 (¥)</h3>
+        <h3 class="sc-dmRaPn fPIbLV"   v-text="$t('a10')" >最大貸款可能額 (¥)</h3>
         <h2 class="sc-kgflAQ cLQTBj">{{ formatNumber(Info.quota_useing || '10000000') }} </h2>
         <ul class="sc-fLlhyt dETFRX">
           <li>
             <div>{{ Info.monthly_interest_rate * 100 || '0.4' }}%</div>
-            <div style="color: var(--system-light);">最低價格從〜開始</div>
+            <div style="color: var(--system-light);"   v-text="$t('a11')" >最低價格從〜開始</div>
           </li>
           <li>
             <div> {{ Info.fast_time || 30 }}秒</div>
-            <div style="color: rgb(243, 161, 109);">快速貸款</div>
+            <div style="color: rgb(243, 161, 109);"  v-text="$t('a13')">快速貸款</div>
           </li>
         </ul>
-        <div class="sc-bBrHrO hOhsct" @click="getUserInfo()">立即借款</div>
-        <div class="sc-ivTmOn dMBgxr">基本認證（必要）</div>
+        <div class="sc-bBrHrO hOhsct" @click="getUserInfo()"  v-text="$t('a14')">立即借款</div>
+        <div class="sc-ivTmOn dMBgxr"  v-text="$t('a15')">基本認證（必要）</div>
         <ul class="sc-cxabCf fVHCyl">
           <li>
-            <span v-if="userinfoinfo == null">未填寫</span>
-            <span v-else class="success">完成</span>
+            <span v-if="userinfoinfo == null"  v-text="$t('a16')" >未填寫</span>
+            <span v-else class="success"  v-text="$t('a17')" >完成</span>
             <img alt=""
               src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAABdFBMVEUAAABVqf7Y2+AtOEQkNEZUqf7Z3OHZ298Ha9D///9UVVZGT1kvNTqztrqxsbNCerODhokzWX5sbW6PuOMJdeXEx8tWq//LztLHys8Ga9IFcd3BxMjCxcpOmeFQm+e7vcJKj9OrrrFIiMkIY76kpaaPq8cAUKc3hdZ8jqCfoqVQnOoQeer+//++3/+ez/8KW60NTI09cqTN1NsJR4c1XogLUpkORn6Qk5ZYWlx2j6rA0+oRPmpcX2EvT3BzdXgTMU5pbG7Y2+BWqf8Ed+3a3OHW2t8DevPd4OXb3uP///9UqP7y8/QBdezX2+D7+/zn6ewAcexYrv/+/v7l5ujf4uff4eV/suXj4ODf3+Dl4d9atf9asv9Yq/9crf5SqP5Opv7s7fDo6u4Cdu0Acu0QfOs4j+mTuuS8zuEBf//q9P7p8/7J4/642v6Vyf5qtP602f329/cAdfQpjfMriurh5OhXn+dtqeWLtuTa3uOoxeOxyOLF0uFbThD8AAAAQXRSTlMA7e0LBpE6HdiROh0Qz7micV9K/vv68e3i4N/e2dHQ0MzJwL+0sauooZyTkpGRkZCPh3NzbGdmWVNPTk1KREEqJJA9fpgAAAFpSURBVCjPldBlU8MwGMDxQFvYGO7u7u6WNlm9jPlgrrg7X56mu+va3t7wf5NcfvfkLgG2qMHaSk3AXj0P9TCGJMGJkHQmq8ZaDXHmCTqRpugyCum0DemDlQlXv2t6L0BQFgULbru8epzX2/lNrkV+hE2kdCiXLSBVDQX8byHVnFz1ckpZc+EIljVNk7GJfZyS9/lyHKcoCoSIZL7z5Iorlt4/Cj4fl1c6oljgjW/oMnDrORyLRmKwGP75zM6sB3t26kinBm68lKAeisSiv68L+2MeYGn2C5rhKQ8NrE0GKhhqthug5nh9RE+FfHMjcNSAIDrTE2DmEDhrHEFYE0VNQL2U08hokJflIK/uOsXQJsTzaKAdVI0+bm1tp8D/otrmGWZ50e12LzEMs2l/S8t5nJXu/aIoPkosezlqNc8Fqxe/u7m+fSC7iyMLtl2SIymVSKSSZHe+ZruVNVRKSqzRuAWHumvsDZv0B1YPaEGf4EZSAAAAAElFTkSuQmCC">
-            <div>個人資料</div>
-            <div v-if="userinfoinfo != null" @click="$router.push('/info1')">前往 &gt;</div>
-            <div v-else @click="$router.push('/submit')">前往 &gt;</div>
+            <div  v-text="$t('a18')">個人資料</div>
+            <div v-if="userinfoinfo != null" @click="$router.push('/info1')"  v-text="$t('a19')" >前往 &gt;</div>
+            <div v-else @click="$router.push('/submit')"  v-text="$t('a19')" >前往 &gt;</div>
           </li>
           <li>
-            <span v-if="familyInfo == null">未填寫</span>
-            <span v-else class="success">完成</span>
+            <span v-if="familyInfo == null"  v-text="$t('a16')" >未填寫</span>
+            <span v-else class="success"  v-text="$t('a17')" >完成</span>
             <img alt=""
               src="data:image/png;base64,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">
-            <div>家庭資料</div>
-            <div v-if="familyInfo != null" @click="$router.push('/info2')">前往 &gt;</div>
-            <div v-else @click="$router.push('/submit')">前往 &gt;</div>
+            <div  v-text="$t('a20')" >家庭資料</div>
+            <div v-if="familyInfo != null" @click="$router.push('/info2')"  v-text="$t('a19')" >前往 &gt;</div>
+            <div v-else @click="$router.push('/submit')"  v-text="$t('a19')" >前往 &gt;</div>
 
           </li>
           <li>
-            <span v-if="bankInfo == null">未填寫</span>
-            <span v-else class="success">完成</span>
+            <span v-if="bankInfo == null"  v-text="$t('a16')" >未填寫</span>
+            <span v-else class="success"  v-text="$t('a17')" >完成</span>
             <img alt=""
               src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAeFBMVEUAAADY2+BWqf5SqP9isf/Z3OHY29/T1tt9nsCDjprY2+BWqf7d3d9Qp/9Opv/Z3OBSqP/f3t5lr/pwtPityurF1OTb3ODW2t/g3t5Yqv15t/aCuvSKvfKgxu280Obf4eRbq/yPv/CVwe+kx+u1zufQ2OLO1+LL1uLgrO3dAAAACnRSTlMA7e3u8+3t6cmU362yZwAAAJhJREFUKM/Nz9kSgjAMheEiroe0ZW/Z3X3/N5QBC46t1/DffklmwpbotPU3znz/yLosEYEjfk47BkLNbRNJFoEBoFsQ/lqlCANCt/H3cj/a5BIfBD1LMRuP7xqYELm8hua0KF8Eg2NRWvBxrwbB4KTDT7xIe7IQpCou4lbDhZB5c3kQ3AhQJGHj3LpR/jfJDjvP2d7zFFugN3duF9O9r4pVAAAAAElFTkSuQmCC">
-            <div>銀行資料</div>
-            <div v-if="bankInfo != null" @click="$router.push('/info3')">前往 &gt;</div>
-            <div v-else @click="$router.push('/submit')">前往 &gt;</div>
+            <div  v-text="$t('a21')" >銀行資料</div>
+            <div v-if="bankInfo != null" @click="$router.push('/info3')"  v-text="$t('a19')" >前往 &gt;</div>
+            <div v-else @click="$router.push('/submit')"  v-text="$t('a19')" >前往 &gt;</div>
 
           </li>
         </ul>

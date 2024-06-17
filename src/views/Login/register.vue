@@ -17,18 +17,18 @@
             p-id="2998"
           ></path></svg
       ></span>
-      <div class="sc-ckMVTt ipKhVx">登記</div>
+      <div class="sc-ckMVTt ipKhVx"  v-text="$t('a3')">登記</div>
     </div>
     <div class="sc-gFGZVQ gTnzTn fix-height"></div>
     <h3 class="sc-GVOUr iwjCtr"></h3>
-    <h3>註冊成為新用戶</h3>
+    <h3  v-text="$t('a5')">註冊成為新用戶</h3>
     <div class="sc-iNWwEs fGkUGU" style="margin-top: 3rem">
       <div class="sc-gSAPjG cHATSO">
         <span class="sc-dwLEzm eInsnn">+81</span>
       </div>
       <input
         type="number"
-        placeholder="手機號碼"
+        :placeholder="$t('a0')"
         v-model="form.account"
       />
     </div>
@@ -39,7 +39,7 @@
         alt=""
       /><input
         type="password"
-        placeholder="請輸入您的密碼"
+        :placeholder="$t('a1')"
         v-model="form.password"
       />
     </div>
@@ -50,11 +50,11 @@
         alt=""
       /><input
         type="password"
-        placeholder="確認密碼"
+        :placeholder="$t('a6')"
         v-model="SurePassword"
       />
     </div>
-    <div class="sc-jIAOiI bqZHFE iiEAzi" @click="toLogin()">
+    <div  v-text="$t('a7')" class="sc-jIAOiI bqZHFE iiEAzi" @click="toLogin()">
       用戶註冊
     </div>
   </div>
@@ -84,7 +84,7 @@ export default {
   methods: {
     toLogin() {
       if (this.form.password !== this.SurePassword) {
-        return Toast("パスワードが一致しません");
+        return Toast(this.$t('a8'));
       }
       User.register(this.form).then((res) => {
         if (res.data) {

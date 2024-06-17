@@ -35,13 +35,13 @@ Vue.prototype.$api = api;
 // 开发环境时使用vconsole调试
 // process.env.VUE_APP_ENV !== "production" && AsyncAwaitVconsole();
 
-// import VueI18n from 'vue-i18n';
-// import i18nData from "@/i18n"
-// Vue.use(VueI18n);
-// const i18n = new VueI18n({
-//   locale: localStorage.getItem('lang') || 'TC', // 设置默认语言为英文
-//   messages: i18nData
-// });
+import VueI18n from 'vue-i18n';
+import i18nData from "@/i18n"
+Vue.use(VueI18n);
+const i18n = new VueI18n({
+  locale: localStorage.getItem('lang') || 'ZW', // 设置默认语言为英文
+  messages: i18nData
+});
 
 
 
@@ -50,6 +50,6 @@ Vue.config.productionTip = false;
 new Vue({
   router,
   store,
-  // i18n,
+  i18n,
   render: (h) => h(App),
 }).$mount("#app");
