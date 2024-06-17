@@ -8,7 +8,7 @@
                             d="M970.496 543.829333l30.165333-30.165333-415.829333-415.914667a42.837333 42.837333 0 0 0-60.288 0 42.538667 42.538667 0 0 0 0 60.330667l355.413333 355.498667-355.413333 355.285333a42.496 42.496 0 0 0 0 60.288c16.64 16.64 43.861333 16.469333 60.288 0.042667l383.914667-383.701334 1.749333-1.664z"
                             fill="#3D3D3D" p-id="2998"></path>
                     </svg></span>
-                <div class="sc-ckMVTt ipKhVx">資料輸入</div>
+                    <div class="sc-ckMVTt ipKhVx"    v-text="$t('a78')" >資訊輸入</div>
             </div>
             <div class="sc-gFGZVQ gTnzTn fix-height"></div>
             <div v-if="form4Show">
@@ -30,37 +30,37 @@
                 <div v-show="show4" class="show">
 
                     <div class="d-flex">
-                        <p style="font-size: 1.6rem;padding: 0.8rem 1.6rem;padding-right: 0;">銀行名稱:</p>
-                        <div class="sc-jOhDuK iQSHss"><input placeholder="銀行名稱" v-model="bankInfo.bank_name" disabled></div>
+                        <p     v-text="$t('a121')" style="font-size: 1.6rem;padding: 0.8rem 1.6rem;padding-right: 0;">銀行名稱:</p>
+                        <div class="sc-jOhDuK iQSHss"><input :placeholder="$t('a121')" v-model="bankInfo.bank_name" disabled></div>
 
                     </div>
                     <div class="d-flex">
-                        <p style="font-size: 1.6rem;padding: 0.8rem 1.6rem;padding-right: 0;">支行名稱:</p>
-                        <div class="sc-jOhDuK iQSHss"><input placeholder="支行名稱" v-model="bankInfo.branch_name" disabled>
+                        <p      v-text="$t('a122')" style="font-size: 1.6rem;padding: 0.8rem 1.6rem;padding-right: 0;">支行名稱:</p>
+                        <div class="sc-jOhDuK iQSHss"><input :placeholder="$t('a122')" v-model="bankInfo.branch_name" disabled>
                         </div>
 
                     </div>
                     <div class="d-flex">
-                        <p style="font-size: 1.6rem;padding: 0.8rem 1.6rem;padding-right: 0;">號碼:</p>
-                        <div class="sc-jOhDuK iQSHss"><input placeholder="號碼" v-model="bankInfo.bank_code" disabled>
+                        <p    v-text="$t('a123')" style="font-size: 1.6rem;padding: 0.8rem 1.6rem;padding-right: 0;">號碼:</p>
+                        <div class="sc-jOhDuK iQSHss"><input :placeholder="$t('a123')" v-model="bankInfo.bank_code" disabled>
                         </div>
 
 
                     </div>
                     <div class="d-flex">
-                        <p style="font-size: 1.6rem;padding: 0.8rem 1.6rem;padding-right: 0;">交易類型:</p>
-                        <div class="sc-jOhDuK iQSHss"><input placeholder="交易類型" v-model="bankInfo.qu_yin"></div>
+                        <p    v-text="$t('a124')"  style="font-size: 1.6rem;padding: 0.8rem 1.6rem;padding-right: 0;">交易類型:</p>
+                        <div class="sc-jOhDuK iQSHss"><input :placeholder="$t('a124')" v-model="bankInfo.qu_yin"></div>
 
                     </div>
                     <div class="d-flex">
-                        <p style="font-size: 1.6rem;padding: 0.8rem 1.6rem;padding-right: 0;">帳戶號碼:</p>
-                        <div class="sc-jOhDuK iQSHss"><input placeholder="帳戶號碼" v-model="bankInfo.kou_zuo" disabled>
+                        <p v-text="$t('a125')"  style="font-size: 1.6rem;padding: 0.8rem 1.6rem;padding-right: 0;">帳戶號碼:</p>
+                        <div class="sc-jOhDuK iQSHss"><input :placeholder="$t('a125')" v-model="bankInfo.kou_zuo" disabled>
                         </div>
 
                     </div>
 
                     <div class="d-flex" v-if="bankInfo.ming_qian">
-                        <p style="font-size: 1.6rem;padding: 0.8rem 1.6rem;padding-right: 0;">名稱:</p>
+                        <p v-text="$t('a126')" style="font-size: 1.6rem;padding: 0.8rem 1.6rem;padding-right: 0;">名稱:</p>
                         <div class="sc-jOhDuK iQSHss" v-if="bankInfo.ming_qian">
                             <div> {{ bankInfo.ming_qian }}</div>
                         </div>
@@ -71,7 +71,7 @@
 
 
 
-                <div class="sc-kIKDeO czsnHl" @click="goLink()">聯繫客服</div>
+                <div  v-text="$t('a127')" class="sc-kIKDeO czsnHl" @click="goLink()">聯繫客服</div>
             </div>
         </div>
 
@@ -187,7 +187,7 @@ export default {
         },
         setUserInfo() {
             if (this.areAllFieldsEmpty(this.form1)) {
-                return Toast('個人情報をご入力ください');
+                 return Toast(this.$t('a120'));
             }
             this.form1.age = parseInt(this.form1.age)
 
@@ -198,7 +198,7 @@ export default {
 
             User.setuserInfo(params).then(res => {
                 if (res.success) {
-                    Toast('個人情報の提出成功');
+                     Toast(this.$t('a114'));
 
                     if (!this.form2Show && !this.form3Show) {
                         setTimeout(() => {
@@ -217,7 +217,7 @@ export default {
         },
         setfamily() {
             if (this.areAllFieldsEmpty(this.form2)) {
-                return Toast('作品情報をご入力ください');
+                return  Toast(this.$t('a115'));
             }
             const params = {
                 ...this.form2,
@@ -226,7 +226,7 @@ export default {
 
             User.setfamily(params).then(res => {
                 if (res.success) {
-                    Toast('作品情報の提出成功');
+                    Toast(this.$t('a116'));
 
                     if (!this.form1Show && !this.form3Show) {
                         setTimeout(() => {
@@ -245,7 +245,7 @@ export default {
         },
         setbankinfo() {
             if (this.areAllFieldsEmpty(this.form2)) {
-                return Toast('銀行情報をご入力ください');
+                return  Toast(this.$t('a117'));
             }
             const params = {
                 ...this.form3,
@@ -254,7 +254,7 @@ export default {
 
             User.setbankinfo(params).then(res => {
                 if (res.success) {
-                    Toast('銀行情報の提出成功');
+                    Toast(this.$t('a118'));
                     if (!this.form2Show && !this.form2Show) {
                         setTimeout(() => {
                             this.$router.push('/lend')

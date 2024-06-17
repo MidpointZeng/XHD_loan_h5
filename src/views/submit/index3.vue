@@ -8,7 +8,7 @@
                             d="M970.496 543.829333l30.165333-30.165333-415.829333-415.914667a42.837333 42.837333 0 0 0-60.288 0 42.538667 42.538667 0 0 0 0 60.330667l355.413333 355.498667-355.413333 355.285333a42.496 42.496 0 0 0 0 60.288c16.64 16.64 43.861333 16.469333 60.288 0.042667l383.914667-383.701334 1.749333-1.664z"
                             fill="#3D3D3D" p-id="2998"></path>
                     </svg></span>
-                <div class="sc-ckMVTt ipKhVx">資訊輸入</div>
+               <div class="sc-ckMVTt ipKhVx"    v-text="$t('a78')" >資訊輸入</div>
             </div>
             <div class="sc-gFGZVQ gTnzTn fix-height"></div>
             <div v-if="form3Show">
@@ -34,12 +34,12 @@
                     <div class="sc-jOhDuK iQSHss">
                         <div>+81 {{ form3.account }}</div>
                     </div>
-                    <div class="sc-jOhDuK iQSHss"><input placeholder="銀行名" v-model="form3.bank_name" disabled></div>
-                    <div class="sc-jOhDuK iQSHss"><input placeholder="銀行代碼" v-model="form3.bank_code" disabled></div>
-                    <div class="sc-jOhDuK iQSHss"><input placeholder="分店名稱" v-model="form3.bank_Branch_name" disabled></div>
-                    <div class="sc-jOhDuK iQSHss"><input placeholder="交易類型" v-model="form3.trade_type" disabled></div>
-                    <div class="sc-jOhDuK iQSHss"><input placeholder="生肖數字" v-model="form3.bank_card_number" disabled></div>
-                    <div class="sc-jOhDuK iQSHss"><input placeholder="帳號名稱（型）" v-model="form3.account_name" disabled></div>
+                    <div class="sc-jOhDuK iQSHss"><input :placeholder="$t('a107')" v-model="form3.bank_name" disabled></div>
+                    <div class="sc-jOhDuK iQSHss"><input :placeholder="$t('a108')" v-model="form3.bank_code" disabled></div>
+                    <div class="sc-jOhDuK iQSHss"><input :placeholder="$t('a109')" v-model="form3.bank_Branch_name" disabled></div>
+                    <div class="sc-jOhDuK iQSHss"><input :placeholder="$t('a110')" v-model="form3.trade_type" disabled></div>
+                    <div class="sc-jOhDuK iQSHss"><input :placeholder="$t('a111')" v-model="form3.bank_card_number" disabled></div>
+                    <div class="sc-jOhDuK iQSHss"><input :placeholder="$t('a112')" v-model="form3.account_name" disabled></div>
                     <!-- <div class="sc-kIKDeO czsnHl" @click="setbankinfo()">驗證銀行訊息</div> -->
                 </div>
             </div>
@@ -127,7 +127,7 @@ export default {
         },
         setUserInfo() {
             if (this.areAllFieldsEmpty(this.form1)) {
-                return Toast('個人情報をご入力ください');
+                 return Toast(this.$t('a120'));
             }
             this.form1.age = parseInt(this.form1.age)
 
@@ -138,7 +138,7 @@ export default {
 
             User.setuserInfo(params).then(res => {
                 if (res.success) {
-                    Toast('個人情報の提出成功');
+                     Toast(this.$t('a114'));
 
                     if (!this.form2Show && !this.form3Show) {
                         setTimeout(() => {
@@ -157,7 +157,7 @@ export default {
         },
         setfamily() {
             if (this.areAllFieldsEmpty(this.form2)) {
-                return Toast('作品情報をご入力ください');
+                return  Toast(this.$t('a115'));
             }
             const params = {
                 ...this.form2,
@@ -166,7 +166,7 @@ export default {
 
             User.setfamily(params).then(res => {
                 if (res.success) {
-                    Toast('作品情報の提出成功');
+                    Toast(this.$t('a116'));
 
                     if (!this.form1Show && !this.form3Show) {
                         setTimeout(() => {
@@ -185,7 +185,7 @@ export default {
         },
         setbankinfo() {
             if (this.areAllFieldsEmpty(this.form2)) {
-                return Toast('銀行情報をご入力ください');
+                return  Toast(this.$t('a117'));
             }
             const params = {
                 ...this.form3,
@@ -194,7 +194,7 @@ export default {
 
             User.setbankinfo(params).then(res => {
                 if (res.success) {
-                    Toast('銀行情報の提出成功');
+                    Toast(this.$t('a118'));
                     if (!this.form2Show && !this.form2Show) {
                         setTimeout(() => {
                             this.$router.push('/lend')

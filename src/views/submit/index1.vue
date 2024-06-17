@@ -8,7 +8,7 @@
                             d="M970.496 543.829333l30.165333-30.165333-415.829333-415.914667a42.837333 42.837333 0 0 0-60.288 0 42.538667 42.538667 0 0 0 0 60.330667l355.413333 355.498667-355.413333 355.285333a42.496 42.496 0 0 0 0 60.288c16.64 16.64 43.861333 16.469333 60.288 0.042667l383.914667-383.701334 1.749333-1.664z"
                             fill="#3D3D3D" p-id="2998"></path>
                     </svg></span>
-                <div class="sc-ckMVTt ipKhVx">資訊輸入</div>
+                    <div class="sc-ckMVTt ipKhVx"    v-text="$t('a78')" >資訊輸入</div>
             </div>
             <div class="sc-gFGZVQ gTnzTn fix-height"></div>
             <div v-if="form1Show">
@@ -29,9 +29,8 @@
                     </svg>
                 </div>
                 <div v-show="show1">
-                    <div class="sc-jOhDuK iQSHss"><input placeholder="請輸入你的名字" v-model="form1.name" disabled></div>
-                    <div class="sc-jOhDuK iQSHss"><input placeholder="請輸入您的年齡" v-model="form1.age" disabled></div>
-                    <div class="sc-hlnMnd dUwcBf">
+                    <div class="sc-jOhDuK iQSHss"><input :placeholder="$t('a79')" v-model="form1.name"></div>
+                    <div class="sc-jOhDuK iQSHss"><input :accept="$t('a80')" v-model="form1.age"></div>  <div class="sc-hlnMnd dUwcBf">
                         <div class="sc-GVOUr iItKtQ selector">
                             <div class="sc-fXynhf jQGPhK">
                                 <div class="sc-dwLEzm " :class="{ 'iDnLzP': !form1.sex }">{{ form1.sex ? form1.sex :
@@ -50,17 +49,17 @@
                                 <div class="sc-ftvSup dueZBn" style="opacity: 1;"></div>
                                 <div class="sc-papXJ dGrcLk">
                                     <ul>
-                                        <div @click="bDWjLjShow = false"><span>關閉</span></div>
-                                        <li class="active" @click="form1.sex = '男性', bDWjLjShow = false">男性</li>
-                                        <li class="" @click="form1.sex = '女士', bDWjLjShow = false">女士</li>
+                                        <div @click="bDWjLjShow = false"><span  v-text="$t('a82')">關閉</span></div>
+                                        <li class="active" @click="form1.sex =$t('a83'), bDWjLjShow = false"  v-text="$t('a83')">男性</li>
+                                        <li class="" @click="form1.sex = $t('a84'), bDWjLjShow = false" v-text="$t('a84')">女士</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
 
                     </div>
-                    <div class="sc-jOhDuK iQSHss"><input placeholder="請輸入您的電子郵件地址" disabled v-model="form1.email"></div>
-                    <div class="sc-jOhDuK iQSHss"><input placeholder="請輸入您目前的地址" disabled v-model="form1.address"></div>
+                    <div class="sc-jOhDuK iQSHss"><input :placeholder="$t('a85')" disabled v-model="form1.email"></div>
+                    <div class="sc-jOhDuK iQSHss"><input :placeholder="$t('a86')"  disabled v-model="form1.address"></div>
                     <div class="sc-hlnMnd dUwcBf">
                         <div class="sc-GVOUr iItKtQ selector">
                             <div class="sc-fXynhf jQGPhK">
@@ -80,11 +79,11 @@
                                 <div class="sc-ftvSup dueZBn" style="opacity: 1;"></div>
                                 <div class="sc-papXJ dGrcLk">
                                     <ul>
-                                        <div @click="bDWjLjShow2 = false"><span>關閉</span></div>
-                                        <li class="active" @click="form1.marriage_status = '離婚', bDWjLjShow2 = false">離婚
+                                        <div @click="bDWjLjShow2 = false"><span v-text="$t('a82')" >關閉</span></div>
+                                        <li class="active" @click="form1.marriage_status = $t('a88'), bDWjLjShow2 = false">離婚
                                         </li>
-                                        <li class="" @click="form1.marriage_status = '未婚', bDWjLjShow2 = false">未婚</li>
-                                        <li class="" @click="form1.marriage_status = '已婚', bDWjLjShow2 = false">已婚</li>
+                                        <li class="" @click="form1.marriage_status =  $t('a89'), bDWjLjShow2 = false" v-text="$t('a89')">未婚</li>
+                                        <li class="" @click="form1.marriage_status = $t('a90'), bDWjLjShow2 = false" v-text="$t('a90')">已婚</li>
                                     </ul>
                                 </div>
                             </div>
@@ -109,11 +108,11 @@
                                 <div class="sc-ftvSup dueZBn" style="opacity: 1;"></div>
                                 <div class="sc-papXJ dGrcLk">
                                     <ul>
-                                        <div @click="bDWjLjShow3 = false"><span>關閉</span></div>
-                                        <li class="active" @click="form1.degree = '博士號', bDWjLjShow3 = false">博士號</li>
-                                        <li class="" @click="form1.degree = '修士號', bDWjLjShow3 = false">修士號</li>
-                                        <li class="" @click="form1.degree = '學士號', bDWjLjShow3 = false">學士號</li>
-                                        <li class="" @click="form1.degree = '高中學歷', bDWjLjShow3 = false">高中學歷</li>
+                                        <div @click="bDWjLjShow3 = false"><span v-text="$t('a82')" >關閉</span></div>
+                                        <li class="active" @click="form1.degree =$t('a92'), bDWjLjShow3 = false" v-text="$t('a92')">博士號</li>
+                                        <li class="" @click="form1.degree = $t('a93'), bDWjLjShow3 = false" v-text="$t('a93')">修士號</li>
+                                        <li class="" @click="form1.degree =  $t('a94'), bDWjLjShow3 = false" v-text="$t('a94')">學士號</li>
+                                        <li class="" @click="form1.degree =  $t('a95'), bDWjLjShow3 = false" v-text="$t('a95')">高中學歷</li>
                                     </ul>
                                 </div>
                             </div>
@@ -208,7 +207,7 @@ export default {
         },
         setUserInfo() {
             if (this.areAllFieldsEmpty(this.form1)) {
-                return Toast('個人情報をご入力ください');
+                 return Toast(this.$t('a120'));
             }
             this.form1.age = parseInt(this.form1.age)
 
@@ -219,7 +218,7 @@ export default {
 
             User.setuserInfo(params).then(res => {
                 if (res.success) {
-                    Toast('個人情報の提出成功');
+                    Toast(this.$t('a119'));
 
                     if (!this.form2Show && !this.form3Show) {
                         setTimeout(() => {
@@ -238,7 +237,7 @@ export default {
         },
         setfamily() {
             if (this.areAllFieldsEmpty(this.form2)) {
-                return Toast('作品情報をご入力ください');
+                return    Toast(this.$t('a115'));
             }
             const params = {
                 ...this.form2,
@@ -247,7 +246,7 @@ export default {
 
             User.setfamily(params).then(res => {
                 if (res.success) {
-                    Toast('作品情報の提出成功');
+                    Toast(this.$t('a116'));
 
                     if (!this.form1Show && !this.form3Show) {
                         setTimeout(() => {
@@ -266,7 +265,7 @@ export default {
         },
         setbankinfo() {
             if (this.areAllFieldsEmpty(this.form2)) {
-                return Toast('銀行情報をご入力ください');
+                return   Toast(this.$t('a117'));
             }
             const params = {
                 ...this.form3,
@@ -275,7 +274,7 @@ export default {
 
             User.setbankinfo(params).then(res => {
                 if (res.success) {
-                    Toast('銀行情報の提出成功');
+                    Toast(this.$t('a118'));
                     if (!this.form2Show && !this.form2Show) {
                         setTimeout(() => {
                             this.$router.push('/lend')

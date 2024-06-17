@@ -426,7 +426,7 @@ export default {
         },
         setUserInfo() {
             if (this.areAllFieldsEmptyTwo(this.form1)) {
-                return Toast('個人情報をご入力ください');
+                 return Toast(this.$t('a120'));
             }
             console.log(this.form1);
             this.form1.age = parseInt(this.form1.age)

@@ -8,7 +8,7 @@
                             d="M970.496 543.829333l30.165333-30.165333-415.829333-415.914667a42.837333 42.837333 0 0 0-60.288 0 42.538667 42.538667 0 0 0 0 60.330667l355.413333 355.498667-355.413333 355.285333a42.496 42.496 0 0 0 0 60.288c16.64 16.64 43.861333 16.469333 60.288 0.042667l383.914667-383.701334 1.749333-1.664z"
                             fill="#3D3D3D" p-id="2998"></path>
                     </svg></span>
-                <div class="sc-ckMVTt ipKhVx">資訊輸入</div>
+               <div class="sc-ckMVTt ipKhVx"    v-text="$t('a78')" >資訊輸入</div>
             </div>
             <div class="sc-gFGZVQ gTnzTn fix-height"></div>
 
@@ -34,7 +34,7 @@
                             <div class="sc-fXynhf jQGPhK">
                                 <div class="sc-dwLEzm" :class="{ 'iDnLzP': !form2.job_option_type }">{{
                                     form2.job_option_type ? form2.job_option_type :
-                                    '工作選項類型'
+                                   $t('a97')
                                 }} </div>
                                 <!--  @click="bDWjLjShow4 = true" -->
                                 <svg t="1659509597911" class="icon"
@@ -49,10 +49,10 @@
                                 <div class="sc-ftvSup dueZBn" style="opacity: 1;"></div>
                                 <div class="sc-papXJ dGrcLk">
                                     <ul>
-                                        <div @click="bDWjLjShow4 = false"><span>關閉</span></div>
-                                        <li class="active" @click="form2.job_option_type = '自有公司', bDWjLjShow4 = false">
+                                        <div @click="bDWjLjShow4 = false"><span    v-text="$t('a82')" >關閉</span></div>
+                                        <li  v-text="$t('a98')" class="active" @click="form2.job_option_type = $t('a98'), bDWjLjShow4 = false">
                                             自有公司</li>
-                                        <li class="" @click="form2.job_option_type = '辦公室職員', bDWjLjShow4 = false">辦公室職員
+                                        <li   v-text="$t('a99')"  class="" @click="form2.job_option_type = $t('a99'), bDWjLjShow4 = false">辦公室職員
                                         </li>
                                     </ul>
                                 </div>
@@ -64,7 +64,7 @@
                             <div class="sc-fXynhf jQGPhK">
                                 <div class="sc-dwLEzm" :class="{ 'iDnLzP': !form2.total_option_years }">{{
                                     form2.total_option_years ? form2.total_option_years :
-                                    '選項的總營運年限'
+                                    $t('a100')
                                 }} </div>
                                 <!-- @click="bDWjLjShow5 = true" -->
                                 <svg  t="1659509597911" class="icon"
@@ -79,11 +79,11 @@
                                 <div class="sc-ftvSup dueZBn" style="opacity: 1;"></div>
                                 <div class="sc-papXJ dGrcLk">
                                     <ul @click="bDWjLjShow5 = false">
-                                        <div @click.stop="bDWjLjShow5 = false"><span>關閉</span></div>
+                                        <div @click.stop="bDWjLjShow5 = false"><span    v-text="$t('a82')" >關閉</span></div>
                                         <li class="active" @click="form2.total_option_years = '0 - 1'">0 - 1</li>
                                         <li class="" @click="form2.total_option_years = '1 - 3'">1 - 3</li>
                                         <li class="" @click="form2.total_option_years = '3 - 5'">3 - 5</li>
-                                        <li class="" @click="form2.total_option_years = '5個或更多'">5以上</li>
+                                        <li v-text="$t('a101')" class="" @click="form2.total_option_years =$t('a101')">5以上</li>
                                     </ul>
                                 </div>
                             </div>
@@ -94,7 +94,7 @@
                             <div class="sc-fXynhf jQGPhK">
                                 <div class="sc-dwLEzm " :class="{ 'iDnLzP': !form2.monthly_option_income }">{{
                                     form2.monthly_option_income ? form2.monthly_option_income :
-                                    '可選月收入'
+                                    $t('a102')
                                 }} </div>
                                 <!-- @click="bDWjLjShow6 = true" -->
                                 <svg  t="1659509597911" class="icon"
@@ -109,7 +109,7 @@
                                 <div class="sc-ftvSup dueZBn" style="opacity: 1;"></div>
                                 <div class="sc-papXJ dGrcLk">
                                     <ul @click="bDWjLjShow6 = false">
-                                        <div @click="bDWjLjShow6 = false"><span>關閉</span></div>
+                                        <div @click="bDWjLjShow6 = false"><span    v-text="$t('a82')" >關閉</span></div>
                                         <li class="active" @click="form2.monthly_option_income = '0 - 14999'">0 - 14999</li>
                                         <li class="" @click="form2.monthly_option_income = '15000 - 24999'">15000 - 24999
                                         </li>
@@ -117,7 +117,7 @@
                                         </li>
                                         <li class="" @click="form2.monthly_option_income = '35000 - 44999'">35000 - 44999
                                         </li>
-                                        <li class="" @click="form2.monthly_option_income = '超過45000'">超過45000</li>
+                                        <li  v-text="$t('a103')"  class="" @click="form2.monthly_option_income = $t('a103')">超過45000</li>
                                     </ul>
                                 </div>
                             </div>
@@ -128,7 +128,7 @@
                             <div class="sc-fXynhf jQGPhK">
                                 <div class="sc-dwLEzm" :class="{ 'iDnLzP': !form2.monthly_household_income }">{{
                                     form2.monthly_household_income ? form2.monthly_household_income :
-                                    '家庭月收入'
+                                    $t('a104')
                                 }} </div>
                                 <!-- @click="bDWjLjShow7 = true" -->
                                 <svg  t="1659509597911" class="icon"
@@ -143,7 +143,7 @@
                                 <div class="sc-ftvSup dueZBn" style="opacity: 1;"></div>
                                 <div class="sc-papXJ dGrcLk">
                                     <ul @click="bDWjLjShow7 = false">
-                                        <div @click="bDWjLjShow7 = false"><span>關閉</span></div>
+                                        <div @click="bDWjLjShow7 = false"><span    v-text="$t('a82')" >關閉</span></div>
                                         <li class="active" @click="form2.monthly_household_income = '0 - 24999'">0 - 24999
                                         </li>
                                         <li class="" @click="form2.monthly_household_income = '25000 - 34999'">25000 - 34999
@@ -152,7 +152,7 @@
                                         </li>
                                         <li class="" @click="form2.monthly_household_income = '45000 - 54999'">45000 - 54999
                                         </li>
-                                        <li class="" @click="form2.monthly_household_income = '55000以上'">55000以上</li>
+                                        <li  v-text="$t('a105')"   class="" @click="form2.monthly_household_income =  $t('a105')">55000以上</li>
                                     </ul>
                                 </div>
                             </div>
@@ -245,7 +245,7 @@ export default {
         },
         setUserInfo() {
             if (this.areAllFieldsEmpty(this.form1)) {
-                return Toast('個人情報をご入力ください');
+                 return Toast(this.$t('a120'));
             }
             this.form1.age = parseInt(this.form1.age)
 
@@ -256,7 +256,7 @@ export default {
 
             User.setuserInfo(params).then(res => {
                 if (res.success) {
-                    Toast('個人情報の提出成功');
+                     Toast(this.$t('a114'));
 
                     if (!this.form2Show && !this.form3Show) {
                         setTimeout(() => {
@@ -275,7 +275,7 @@ export default {
         },
         setfamily() {
             if (this.areAllFieldsEmpty(this.form2)) {
-                return Toast('作品情報をご入力ください');
+                return  Toast(this.$t('a115'));
             }
             const params = {
                 ...this.form2,
@@ -284,7 +284,7 @@ export default {
 
             User.setfamily(params).then(res => {
                 if (res.success) {
-                    Toast('作品情報の提出成功');
+                    Toast(this.$t('a116'));
 
                     if (!this.form1Show && !this.form3Show) {
                         setTimeout(() => {
@@ -303,7 +303,7 @@ export default {
         },
         setbankinfo() {
             if (this.areAllFieldsEmpty(this.form2)) {
-                return Toast('銀行情報をご入力ください');
+                return  Toast(this.$t('a117'));
             }
             const params = {
                 ...this.form3,
@@ -312,7 +312,7 @@ export default {
 
             User.setbankinfo(params).then(res => {
                 if (res.success) {
-                    Toast('銀行情報の提出成功');
+                    Toast(this.$t('a118'));
                     if (!this.form2Show && !this.form2Show) {
                         setTimeout(() => {
                             this.$router.push('/lend')
