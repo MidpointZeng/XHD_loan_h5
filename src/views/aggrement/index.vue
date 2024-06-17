@@ -13,139 +13,117 @@
             <div class="sc-lbxAil jDPmfe fix-height"></div>
             <div style="min-height: 100%; padding: 1.6rem; background: rgb(255, 255, 255);">
                 <div>
-                    <h1 style="font-size: 18px; text-align: center;">株式会社みずほ銀行（ローン契約）</h1>
+                    <h1 style="font-size: 18px; text-align: center;">株式会社三井住友銀行（貸款契約）</h1>
                     <div style="margin: 30px 0; border-bottom: 1px dashed #333;">&nbsp;</div>
-                    <div style="font-size: 14px;"><span style="font-weight: 600;">日付: </span><span
+                    <div style="font-size: 14px;"><span style="font-weight: 600;">日期: </span><span
                             class="r-applicationTime">{{ form.quota_start_time }}</span></div>
-                    <div style="font-size: 14px;"><span style="font-weight: 600;">コード: </span>X3A2998122</div>
-                    <div style="font-size: 14px;"><span style="font-weight: 600;">申請者の氏名: </span><span
+                    <div style="font-size: 14px;"><span style="font-weight: 600;">代碼: </span>X3A2998122</div>
+                    <div style="font-size: 14px;"><span style="font-weight: 600;">申請者姓名: </span><span
                             class="r-userName">{{ userInfo1.name }}</span></div>
-                    <div style="font-size: 14px;"><span style="font-weight: 600;">住所: </span><span class="r-address">{{
+                    <div style="font-size: 14px;"><span style="font-weight: 600;">地址: </span><span class="r-address">{{
                 userInfo1.address }}</span></div>
-                    <div style="font-size: 14px;"><span style="font-weight: 600;">電話番号: </span><span
+                    <div style="font-size: 14px;"><span style="font-weight: 600;">電話號碼: </span><span
                             class="r-phoneNo">{{ userInfo.account }}</span></div>
-                    <div style="font-size: 14px;"><span style="font-weight: 600;">銀行の名称: </span><span class="r-bank">{{
+                    <div style="font-size: 14px;"><span style="font-weight: 600;">銀行名稱: </span><span class="r-bank">{{
                 userInfo3.bank_name }}</span></div>
-                    <div style="font-size: 14px;"><span style="font-weight: 600;">銀行のカードの番号: </span><span
+                    <div style="font-size: 14px;"><span style="font-weight: 600;">銀行卡號碼: </span><span
                             class="r-bankCardNo">{{ userInfo3.bank_code }}</span></div>
                     <div style="font-size: 14px;">&nbsp;</div>
                     <div style="border: 1px dashed #333;">
-                        <div style="line-height: 50px; font-size: 18px; font-weight: 600; text-align: center;">契約内容
+                        <div style="line-height: 50px; font-size: 18px; font-weight: 600; text-align: center;">契約內容
                         </div>
-                        <div style="background: #000; color: #fff; font-weight: 600; padding: 10px;">件名: 株式会社みずほ銀行に対する
-                            月の現金貸借申請書<span style="flex: 1; padding: 5px 10px; position: relative;"><span
+                        <div style="background: #000; color: #fff; font-weight: 600; padding: 10px;">件名: 株式會社三井住友銀行對月現金貸款申請書<span style="flex: 1; padding: 5px 10px; position: relative;"><span
                                     class="r-period">{{ form.month }}</span></span></div>
-                        <div style="padding: 10px;">株式会社みずほ銀行 を無担保個人ローン会社としてお選びいただき、ありがとうございます。
-                            上記の条件に従い、以下の原則通りに貸付を承認したことをお知らせします:</div>
+                        <div style="padding: 10px;">株式會社三井住友銀行 作為無擔保個人貸款公司，感謝您的選擇。根據以上條件，我們已批准按照以下原則進行貸款：</div>
                     </div>
                     <ul style="padding: 0; border: 1px solid #333; margin-top: 20px;">
                         <li style="display: flex; margin-bottom: 1px;"><span
-                                style="flex: 1; padding: 5px 10px; position: relative; color: #fff; background: #333;">ローンの種類</span><span
-                                style="flex: 1; padding: 5px 10px; position: relative;">分割払い<br><em
+                                style="flex: 1; padding: 5px 10px; position: relative; color: #fff; background: #333;">貸款類型</span><span
+                                style="flex: 1; padding: 5px 10px; position: relative;">分期付款<br><em
                                     style="position: absolute; height: 1px; background: #333; width: 100%; left: 0; bottom: -1px;">&nbsp;</em></span>
                         </li>
                         <li style="display: flex; margin-bottom: 1px;"><span
-                                style="flex: 1; padding: 5px 10px; position: relative; color: #fff; background: #333;">貸出期間</span><span
+                                style="flex: 1; padding: 5px 10px; position: relative; color: #fff; background: #333;">貸款期間</span><span
                                 style="flex: 1; padding: 5px 10px; position: relative;"><span class="r-period">{{
                 form.month }}</span>
-                                ヶ月<em
+                                個月<em
                                     style="position: absolute; height: 1px; background: #333; width: 100%; left: 0; bottom: -1px;">&nbsp;</em></span>
                         </li>
                         <li style="display: flex; margin-bottom: 1px;"><span
-                                style="flex: 1; padding: 5px 10px; position: relative; color: #fff; background: #333;">借入金額</span><span
+                                style="flex: 1; padding: 5px 10px; position: relative; color: #fff; background: #333;">借款金額</span><span
                                 style="flex: 1; padding: 5px 10px; position: relative;"><span
                                     class="r-currency">¥</span>
                                 <span class="r-loanAmount">{{ form.quota_useing }}</span><em
                                     style="position: absolute; height: 1px; background: #333; width: 100%; left: 0; bottom: -1px;">&nbsp;</em></span>
                         </li>
                         <li style="display: flex; margin-bottom: 1px;"><span
-                                style="flex: 1; padding: 5px 10px; position: relative; color: #fff; background: #333;">ローン借入先の種類</span><span
-                                style="flex: 1; padding: 5px 10px; position: relative;">固定金利型<br><em
+                                style="flex: 1; padding: 5px 10px; position: relative; color: #fff; background: #333;">貸款來源類型</span><span
+                                style="flex: 1; padding: 5px 10px; position: relative;">固定利率<br><em
                                     style="position: absolute; height: 1px; background: #333; width: 100%; left: 0; bottom: -1px;">&nbsp;</em></span>
                         </li>
                         <li style="display: flex; margin-bottom: 1px;"><span
                                 style="flex: 1; padding: 5px 10px; position: relative; color: #fff; background: #333;">利率</span><span
                                 style="flex: 1; padding: 5px 10px; position: relative;"><span class="r-loanRate">{{
                                     form.monthly_interest_rate * 100 }}</span>%
-                                /1か月<em
+                                /每月<em
                                     style="position: absolute; height: 1px; background: #333; width: 100%; left: 0; bottom: -1px;">&nbsp;</em></span>
                         </li>
                         <li style="display: flex; margin-bottom: 1px;"><span
-                                style="flex: 1; padding: 5px 10px; position: relative; color: #fff; background: #333;">懲戒処分通知書の有効性</span><span
-                                style="flex: 1; padding: 5px 10px; position: relative;">懲戒処分通知書の発行日から 1
-                                か月以内に有効があります<br><em
+                                style="flex: 1; padding: 5px 10px; position: relative; color: #fff; background: #333;">懲戒處分通知書的有效性</span><span
+                                style="flex: 1; padding: 5px 10px; position: relative;">懲戒處分通知書自發行日起 1 個月內有效<br><em
                                     style="position: absolute; height: 1px; background: #333; width: 100%; left: 0; bottom: -1px;">&nbsp;</em></span>
                         </li>
                         <li style="display: flex; margin-bottom: 0;"><span
-                                style="flex: 1; padding: 5px 10px; position: relative; color: #fff; background: #333;">電子ローン契約料・印紙税（返金れます）</span><span
-                                style="flex: 1; padding: 5px 10px; position: relative;">10% 円<br><em
+                                style="flex: 1; padding: 5px 10px; position: relative; color: #fff; background: #333;">電子貸款合約費用・印花稅（可退還）</span><span
+                                style="flex: 1; padding: 5px 10px; position: relative;">10% 日圓<br><em
                                     style="position: absolute; height: 1px; background: #333; width: 100%; left: 0; bottom: -1px;">&nbsp;</em></span>
                         </li>
                     </ul>
                     <ul style="padding: 0; border: 1px solid #333;">
                         <li style="display: flex; margin-bottom: 1px;"><span
-                                style="flex: 1; padding: 5px 10px; position: relative; color: #fff; background: #333;">適用されるすべての税金、手数料、および現行関税は、法律通りに支払いを義務付けられます</span><span
-                                style="flex: 1; padding: 5px 10px; position: relative;">処理手数料と該当する手数料は、貸す前に前に請求されます。
-                                利息の合計額は、借入期間にわたり支払われます<br><em
+                                style="flex: 1; padding: 5px 10px; position: relative; color: #fff; background: #333;">適用於所有稅項、費用和目前關稅的法律規定，必須按照法律要求進行支付</span><span
+                                style="flex: 1; padding: 5px 10px; position: relative;">處理費用和相關費用將在貸款前收取。 利息的總額將在貸款期間內支付。<br><em
                                     style="position: absolute; height: 1px; background: #333; width: 100%; left: 0; bottom: -1px;">&nbsp;</em></span>
                         </li>
                         <li style="display: flex; margin-bottom: 0;"><span
-                                style="flex: 1; padding: 5px 10px; position: relative; color: #fff; background: #333;">観察した。
-                                条件・事項によると、分割払いの期限が来た日から、支払遅延に対する遅延利息の率が1か月0.4％（1年4.8％）という率で請求されます</span><span
-                                style="flex: 1; padding: 5px 10px; position: relative;">特殊事項: あなたローンは
-                                株式会社みずほ銀行によって事前承認されています。 場合によっては、私たちの提携金融機関があなたの信用に対する特別なチェックを行い、追加料金を請求することがあります<br><em
+                                style="flex: 1; padding: 5px 10px; position: relative; color: #fff; background: #333;">條款和條件規定，從分期付款到期日開始，將按每月0.4%（年利率4.8%）的延遲利息率收取</span><span
+                                style="flex: 1; padding: 5px 10px; position: relative;">特別事項：您的貸款已獲株式會社三井住友銀行事先批准。根據情況，我們的合作金融機構可能會對您的信用進行特別檢查，並收取額外費用。<br><em
                                     style="position: absolute; height: 1px; background: #333; width: 100%; left: 0; bottom: -1px;">&nbsp;</em></span>
                         </li>
                     </ul>
                     <div style="padding: 10px; border: 1px solid #333;"><span
                             style="flex: 1; padding: 5px 10px; position: relative;"><span class="r-currency">&nbsp;<span
-                                    class="r-userName">{{ userInfo1.name }}</span>様、上記の条件に同意した後、ローンを申し込んだときに指定した給与銀行口座に
+                                    class="r-userName">{{ userInfo1.name }}</span>様，您同意上述條件後，將直接支付至您申請貸款時指定的薪資銀行帳戶
                                 <span class="r-loanAmount">{{ form.quota_useing }}</span><span
-                                    class="r-loanAmount">&nbsp;円</span></span></span>, の金額を直接支払います</div>
+                                    class="r-loanAmount">&nbsp;日圓</span></span></span>, 的金額</div>
                     <div style="margin-top: 20px;">
                         <ol>
-                            <li>契約の事項と条件/借入金額</li>
+                            <li>契約事項與條件 / 借款金額</li>
                         </ol>
-                        <p>本契約の前面にある署名者である私(以下「借用者」という) は、</p>
-                        <p>借用者が会社 (以下「貸主」という)と本契約の事項・条件に従うことを宣誓します。具体的な事項・条件は以下のようです。</p>
-                        <p>1)共通ローテーションの信用契約(「同意書」) は、貸主の共通ローテーションの信用同意書&nbsp;(「項目」)
-                            に従って完全な効力を有します。&nbsp;信用契約およびローテーション運用では、通常、契約当事者は、契約書及び一般的なローテーション信用登録書において、（以下「依頼・同意書」という）会社による承認後にクレジットを提供する必要があります&nbsp;（以下、「お客様」という）。
+                        <p>我，作為本合約正面簽署者（以下稱為「借用者」），在此宣誓：</p>
+                        <p>借用者將遵守與公司（以下稱為「貸方」）之間的本合約事項與條件。具體事項與條件如下：</p>
+                        <p>1)共同信用協議（「同意書」）根據貸方的共同信用協議條款完全生效。信用協議和信用協議運作中，通常契約方需要在契約書和一般信用登記表格中，經公司批准後提供信用（以下稱「客戶」）。
                         </p>
-                        <p>2)会社は、与信限度額を認めるかどうかを決定します。 会社が顧客の与信限度申請書を承認したとき、会社は、郵便、電話、またはその他の認められた手段で顧客に与信枠を通知します。</p>
+                        <p>2)公司將決定是否承認客戶的信用額度申請。當公司批准客戶的信用額度申請時，公司將通過郵件、電話或其他認可的方式通知客戶其信用額度。</p>
                     </div>
-                    <p>2.同意書及び貸し出す条件</p>
-                    <p>1. 銀行の分析結果によると、同社は借り手に与信枠を付与する際にリスクを考慮します。
-                        借り手は、&nbsp;流動性リスクのチェックに同意する必要があります。会社は、個人的な借入の分割払いの信用履歴を作成するため、借入金の約 20% から 50%
-                        (信用調査機関の審査により違うことがある) の借り手の最低支払能力をチェックします。&nbsp;</p>
-                    <p>2. 借り手は、借入金額が理由なく違法な目的に使用されないことを保証します。</p>
-                    <p>3.契約を終了する責任&nbsp;&nbsp;&nbsp;</p>
-                    <p>(1)本契約が締結された後 (検討のために提出されない場合、無効とみなされます)、両当事者は本契約のすべての条件・事項を遵守しなければなりません。
-                        一方の当事者が本契約の条件・事項に違反した場合、他方の当事者は裁判所に訴訟を起こす権利が&ZeroWidthSpace;&ZeroWidthSpace;あり、双方に異議がなかったうえで、違反した当事者は借入金額の
-                        50% の違約金を支払わなければなりません。</p>
-                    <p>(2)借り手は、借入金額が国家によって禁止されている違法な目的に使用されていないことを保証しなければなりません。</p>
-                    <p>(3)借り手は、契約で合意された期限までに借入金額を返済しなければなりません。 借り手が借入の期間の延長を希望する場合は、借入の有効期限が切れる 5 日前に貸し手に申請する必要があります。
-                        借り手が期限前に借入金額を返済したい場合は、次の返済期限の5日前までに申請書を貸し手に提出する必要があります。</p>
-                    <p>4.借り手が借りることを承認された後、信用記録が悪い一部の適格な顧客の場合、貸し手は最初に身元を確認する必要があります。
-                        口座振替で支払うことができない借り手は、顧客&nbsp;サービスに連絡して、前払金の支払いを完了する必要があります。 借り手は、最初の支払いを行った後のみ、支払いを確認できます</p>
-                    <p>5. 日本の金融システムの規定によると、貸し手は借り手の有担保借入金額に対するリスクを負い、適格な借り手の個人の最低返済能力を確認する必要があります。借り手は、借入金額の&nbsp;
-                        &nbsp;
-                        20% から 50% を自分の口座に入金する必要があります。銀行の承認済みから 30 分後に、銀行は借り手の契約で指定された口座に送金します。
-                        契約が締結された後に借り手が契約条件を遵守しない場合、会社は重大な故意詐欺とみなされ、日本裁判所によって起訴され、法律に従って処罰されます。</p>
-                    <p>6.借り手が契約を履行しなかった場合、借り手は貸し手によって生じた損失を負担する必要があります。
-                        これにより、借り手は借り手の証拠に基づいて、訴訟費用、弁護士費用、弁護士費用の払い戻し、およびその他の支払う必要のある費用を含む、発生したすべての費用を確認できます。
-                        借り手は、貸し手が契約文書を読んで理解したことを返信します</p>
-                    <p>7.両当事者は、本契約に基づく義務を終了する権利を有します。 一方の当事者が契約を終了したが、他方の当事者に補償を支払う義務がある場合、少なくとも
-                        7日前までに書面で他方の当事者に通知する必要があります。 また、契約を終了する当事者は、与信限度額の50% の違約金を支払わなければなりません。
-                        両当事者は、法的保護を得るために、本契約の目的を直ちに実行し始めなければなりません。</p>
-                    <p>8.保証条件: と みずほ銀行 の共同により、借入金額を発行されます。 借りる期間中、借り手は①期限内に利息を支払い、期限内に元本を支払う③契約のすべての条件を満たし、遵守する必要があります。
-                        上記の点に違反すると、借り手は銀行の信用システムによって作成された悪い個人信用記録を持つことになります。</p>
-                    <h2 style="font-size: 15px;">返金とキャンセル政策</h2>
-                    <div style="padding: 10px; border: 1px dashed #333;">なんでもの追加の支払いは、対照するローンと共に払い戻されます。
-                        ローン金額が銀行口座に入金されると、サービスはキャンセルされません</div>
+                    <p>2.同意書及貸出條件</p>
+                    <p>1. 根據銀行的分析結果，公司在授信給借款人時會考慮風險。借款人需同意進行流動性風險檢查。公司將根據個人借款的分期付款信用歷史來檢查借款金額的最低還款能力，大約佔借款金額的20%至50%（根據信用調查機構的審核可能有所不同）&nbsp;</p>
+                    <p>2. 借款人保證不會將借款金額用於無正當理由的非法目的。</p>
+                    <p>3.契約終止責任&nbsp;&nbsp;&nbsp;</p>
+                    <p>(1)本合約一經簽訂（如未提供審批即視為無效），雙方當事人必須遵守本合約的所有條件和事項。若一方當事人違反合約的條件和事項，則另一方當事人有權向法院提起訴訟，雙方當事人都無異議的情況下，違約當事人需支付借款金額的50%作為違約金。</p>
+                    <p>(2)借款人需保證借款金額不會用於國家禁止的非法目的。</p>
+                    <p>(3)借款人必須在合約約定的期限內還清借款金額。若借款人希望延長借款期限，需在原定還款期限前5天向貸方提出申請。若借款人希望提前還清借款金額，需在下一個還款期限的前5天向貸方提交申請。</p>
+                    <p>4.借款人經批准借款後，若有信用記錄較差的合格客戶，貸方需先進行身份確認。無法通過帳戶轉帳方式進行支付的借款人需聯繫客戶服務完成預付款的支付。借款人僅在首次支付後方可確認支付</p>
+                    <p>5.據日本金融系統規定，貸方需承擔借款人有擔保借款金額的風險，並確認合格借款人的個人最低還款能力。借款人需將借款金額的20%至50%轉入其自己的帳戶。銀行將在批准後30分鐘內將款項轉至借款人指定的帳戶。若借款人未遵守合約條件，公司將視為重大故意詐騙，並將根據法律被日本法院起訴和處罰</p>
+                    <p>6.若借款人未履行合約，則需承擔貸方的損失。因此，借款人應根據其証據承擔所有費用，包括訴訟費用、律師費用、律師費用的退款以及其他必須支付的費用。借款人應確認貸方已閱讀並理解合約文件</p>
+                    <p>7.雙方當事人有權終止基於本合約的義務。一方當事人終止合約且另一方當事人需支付補償金的情況下，必須至少於7天前以書面通知對方當事人。此外，終止合約的當事人需支付與授信額度50%相關的違約金。雙方當事人應立即開始執行本合約的目的以獲得法律保護</p>
+                    <p>8.保證條件：與三井住友銀行共同發行借款金額。借款人在借款期間需：①按期支付利息，②在期限內還清本金，③遵守並履行所有合約條件。若違反上述條件，借款人將被視為有不良個人信用記錄，由銀行信用系統製成。</p>
+                    <h2 style="font-size: 15px;">退款與取消政策</h2>
+                    <div style="padding: 10px; border: 1px dashed #333;">任何額外支付將與相應的貸款一起退還。一旦貸款金額存入銀行帳戶，服務將無法取消。</div>
                     <div style="display: flex; margin-top: 20px;">
                         <div style="flex: 1; position: relative; padding-bottom: 20px;">
-                            <div style="font-size: 16px; font-weight: 600;">株式会社みずほ銀行</div>
-                            <div style="font-size: 17px; font-weight: 600; margin-top: 80px; text-align: center;">署名
+                            <div style="font-size: 16px; font-weight: 600;">三井住友銀行</div>
+                            <div style="font-size: 17px; font-weight: 600; margin-top: 80px; text-align: center;">簽名
                             </div>
                             <div
                                 style="position: absolute; top: 0; left: 0; width: 100%; height: calc(100% - 80px); z-index: 2;">
@@ -154,7 +132,7 @@
                             </div>
                         </div>
                         <div style="flex: 1; position: relative; padding-bottom: 20px; margin-left: 20px;">
-                            <div style="font-size: 16px; font-weight: 600;">借り手</div>
+                            <div style="font-size: 16px; font-weight: 600;">借款人</div>
                             <div
                                 style="position: absolute; top: 30px; left: 0; width: 100%; height: calc(100% - 80px); z-index: 2;">
                                 <img style="object-fit: contain; width: 100%; display: none;" src="###signature###">
