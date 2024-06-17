@@ -2,7 +2,7 @@
   <div class="bankaccount-page">
     <div class="sc-fEOsli kVfqcf">
       <div class="sc-bjUoiL eynfbQ">
-        <div class="sc-idiyUo iQiijW">客戶, +81 {{ userInfo.account }}</div>
+        <div class="sc-idiyUo iQiijW"><span v-text="$t('b0')"> 客戶, +81</span> {{ userInfo.account }}</div>
         <div class="sc-dIouRR chsjmz">
           <img alt="" src="../../assets/img/avtar.png">
         </div>
