@@ -8,7 +8,7 @@
                             d="M970.496 543.829333l30.165333-30.165333-415.829333-415.914667a42.837333 42.837333 0 0 0-60.288 0 42.538667 42.538667 0 0 0 0 60.330667l355.413333 355.498667-355.413333 355.285333a42.496 42.496 0 0 0 0 60.288c16.64 16.64 43.861333 16.469333 60.288 0.042667l383.914667-383.701334 1.749333-1.664z"
                             fill="#3D3D3D" p-id="2998"></path>
                     </svg></span>
-                <div class="sc-iNWwEs hGxNKX" v-text="$t('b16')">アグリメント</div>
+                <div class="sc-iNWwEs hGxNKX" v-text="$t('b16')">農業</div>
             </div>
             <div class="sc-lbxAil jDPmfe fix-height"></div>
             <div style="min-height: 100%; padding: 1.6rem; background: rgb(255, 255, 255);">
@@ -39,7 +39,7 @@
                     <ul style="padding: 0; border: 1px solid #333; margin-top: 20px;">
                         <li style="display: flex; margin-bottom: 1px;"><span
                                 style="flex: 1; padding: 5px 10px; position: relative; color: #fff; background: #333;"v-text="$t('b28')">貸款類型</span><span
-                                style="flex: 1; padding: 5px 10px; position: relative;"v-text="$t('b29')">分期付款<br><em
+                                style="flex: 1; padding: 5px 10px; position: relative;"v-text="$t('b29')">證件信用貸<br><em
                                     style="position: absolute; height: 1px; background: #333; width: 100%; left: 0; bottom: -1px;">&nbsp;</em></span>
                         </li>
                         <li style="display: flex; margin-bottom: 1px;"><span
