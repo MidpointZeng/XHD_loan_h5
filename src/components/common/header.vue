@@ -10,7 +10,7 @@
         src="/static/logo.png"
         class="app_logo__34wFj app_logo__2SU77"
       />
-      ファイナンス
+   {{ $t('a128') }}
     </div>
     <span class="titlebar_moreButton__2ynuX"> </span>
   </div>

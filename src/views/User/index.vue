@@ -142,9 +142,9 @@ export default {
     };
   },
   created() {
-    // this.userInfo = JSON.parse(window.localStorage.getItem('userInfo'))
-    // this.Getsystemconfig()
-    // this.getUserInfo()
+    this.userInfo = JSON.parse(window.localStorage.getItem('userInfo'))
+    this.Getsystemconfig()
+    this.getUserInfo()
   },
   methods: {
     getUserInfo() {
