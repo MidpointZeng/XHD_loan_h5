@@ -2,7 +2,7 @@
   <div class="sc-hKMtZM gSsIyS">
     <div class="sc-eCYdqJ eSlzqF">
       <div class="sc-bZkfAO HoWLo">
-        <div class="sc-kLLXSd dqxVFP" v-text="$t('a52')">貸款進度</div>
+        <div class="sc-kLLXSd dqxVFP" v-text="$t('a139')">貸款進度</div>
         <div class="sc-ikZpkk fDFQtg"></div>
         <div class="sc-jIZahH dTwvRZ">
           <span  v-text="$t('a53')">貸款金額（元）</span

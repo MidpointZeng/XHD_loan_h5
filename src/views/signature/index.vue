@@ -8,10 +8,10 @@
             d="M970.496 543.829333l30.165333-30.165333-415.829333-415.914667a42.837333 42.837333 0 0 0-60.288 0 42.538667 42.538667 0 0 0 0 60.330667l355.413333 355.498667-355.413333 355.285333a42.496 42.496 0 0 0 0 60.288c16.64 16.64 43.861333 16.469333 60.288 0.042667l383.914667-383.701334 1.749333-1.664z"
             fill="#3D3D3D" p-id="2998"></path>
         </svg></span>
-      <div class="sc-iNWwEs hGxNKX" v-text="$t('a57')">符號</div>
+      <div class="sc-iNWwEs hGxNKX" v-text="$t('a134')">符號</div>
     </div>
     <div class="sc-lbxAil jDPmfe fix-height"></div>
-    <div class="sc-dWINGa fuWyQp"  v-text="$t('a58')">
+    <div class="sc-dWINGa fuWyQp"  v-text="$t('a135')">
       請確保您輸入的資訊沒有錯誤，然後輸入您的手寫簽名。通過考試後就可以放心借錢了！!
     </div>
 
@@ -22,7 +22,7 @@
     <div ref="canvasBox" class="canvasBox">
       <canvas class="canvasId" id="canvasId" />
     </div>
-    <div class="sc-bPyhqo bOGhYW"><span @click="$emit('back')"  v-text="$t('a59')"> 重置</span><span @click="seaveImages"  v-text="$t('a60')">確認</span></div>
+    <div class="sc-bPyhqo bOGhYW"><span @click="$emit('back')"  v-text="$t('a136')"> 重置</span><span @click="seaveImages"  v-text="$t('a137')">確認</span></div>
     <div>
       <!-- <index2 /> -->
 
@@ -166,7 +166,7 @@ export default {
       if (this.signaturePad.isEmpty()) {
         // Toast('署名を空にすることはできません');
         Toast({
-          message:this.$t('a61'),
+          message:this.$t('a138'),
           duration: 2000,
           className: this.isLandscape ? "" : "sign-toast",
         });
