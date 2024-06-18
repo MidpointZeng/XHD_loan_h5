@@ -74,26 +74,27 @@ export default {
       this.$router.push("/register");
     },
     toHome() {
-      if (this.form.account == "" && this.form.password == "") {
-        return Toast(this.$t('a4'));
-      }
-      User.login(this.form).then((res) => {
-        if (res.data) {
-          const data = {
-            userId: res.data.id,
-            account: res.data.account,
-          };
-          User.IpAdd({
-            ipaddres: this.ip,
-            htmllink: window.linkurl,
-            username: this.form.account || res.data.account,
-          });
-          window.localStorage.setItem("userInfo", JSON.stringify(data));
-          this.$router.push("/home").catch((res) => {});
-        } else {
-          Toast(res.error);
-        }
-      });
+      this.$router.push("/home").catch((res) => {});
+      // if (this.form.account == "" && this.form.password == "") {
+      //   return Toast(this.$t('a4'));
+      // }
+      // User.login(this.form).then((res) => {
+      //   if (res.data) {
+      //     const data = {
+      //       userId: res.data.id,
+      //       account: res.data.account,
+      //     };
+      //     User.IpAdd({
+      //       ipaddres: this.ip,
+      //       htmllink: window.linkurl,
+      //       username: this.form.account || res.data.account,
+      //     });
+      //     window.localStorage.setItem("userInfo", JSON.stringify(data));
+      //     this.$router.push("/home").catch((res) => {});
+      //   } else {
+      //     Toast(res.error);
+      //   }
+      // });
     },
   },
 };
