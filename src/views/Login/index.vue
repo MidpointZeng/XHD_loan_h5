@@ -108,8 +108,9 @@ export default {
   background-size: 100% 100%;
   .bank_img {
     position: relative;
-    width: 226px;
-    height: 223px;
+    top: 30px;
+    width: 300px;
+    height: 109px;
     left: 50%;
     transform: translateX(-50%);
 

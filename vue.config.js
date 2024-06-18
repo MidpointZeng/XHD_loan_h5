@@ -26,7 +26,7 @@ module.exports = defineConfig({
       template: "public/index.html",
       filename: "index.html",
       // template 中的 title 标签需要是 <title><%= htmlWebpackPlugin.options.title %></title>
-      title: "ファイナンス",
+      title: "Mr. Money熊好貸 – 代理各家銀行與三大融資公司與金融機構的數位融資平台",
       chunks: ["chunk-vendors", "chunk-common", "index"],
     },
   },

@@ -76,6 +76,7 @@ export default {
     onChange(e) {
       console.log(e);
       this.active = e;
+      this.$router.push(this.routeList[e].path).catch(res=>{})
       //获取登录信息并判断是否为登录状态----未登录
       // let userInfo = JSON.parse(window.localStorage.getItem("userInfo"));
       // if(userInfo!==null)
