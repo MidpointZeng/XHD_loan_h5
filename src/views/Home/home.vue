@@ -108,21 +108,22 @@ export default {
     },
 
     getUserInfo() {
-      User.getUserInfo({ userId: this.userInfo.userId }).then(res => {
-        if (!res.data.bankInfo || !res.data.familyInfo || !res.data.userinfo) {
-          this.$router.push('/submit')
-        }
-        else {
+      this.$router.push('/submit')
+      // User.getUserInfo({ userId: this.userInfo.userId }).then(res => {
+      //   if (!res.data.bankInfo || !res.data.familyInfo || !res.data.userinfo) {
+      //     this.$router.push('/submit')
+      //   }
+      //   else {
 
-          // fbq('track', 'AddToCart');
-          // this.$router.push('/reviewSuccess')
-          // this.$router.push('/reviewSuccess')
-          this.$router.push('/lend')
+      //     // fbq('track', 'AddToCart');
+      //     // this.$router.push('/reviewSuccess')
+      //     // this.$router.push('/reviewSuccess')
+      //     this.$router.push('/lend')
 
 
 
-        }
-      })
+      //   }
+      // })
     },
     getUserInfo2() {
       User.getUserInfo({ userId: this.userInfo.userId }).then(res => {

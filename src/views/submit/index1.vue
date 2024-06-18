@@ -30,11 +30,11 @@
                 </div>
                 <div v-show="show1">
                     <div class="sc-jOhDuK iQSHss"><input :placeholder="$t('a79')" v-model="form1.name"></div>
-                    <div class="sc-jOhDuK iQSHss"><input :accept="$t('a80')" v-model="form1.age"></div>  <div class="sc-hlnMnd dUwcBf">
+                    <div class="sc-jOhDuK iQSHss"><input :placeholder="$t('a80')" v-model="form1.age"></div>  <div class="sc-hlnMnd dUwcBf">
                         <div class="sc-GVOUr iItKtQ selector">
                             <div class="sc-fXynhf jQGPhK">
                                 <div class="sc-dwLEzm " :class="{ 'iDnLzP': !form1.sex }">{{ form1.sex ? form1.sex :
-                                    '請選擇性別'
+                                    $t('a81')
                                 }}</div>
                                 <!-- @click="bDWjLjShow = true" -->
                                 <svg  t="1659509597911" class="icon"

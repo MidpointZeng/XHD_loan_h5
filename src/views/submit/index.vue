@@ -425,41 +425,42 @@ export default {
             return objbool; // 如果所有字段都为空，则返回true
         },
         setUserInfo() {
-            if (this.areAllFieldsEmptyTwo(this.form1)) {
-                 return Toast(this.$t('a120'));
-            }
-            console.log(this.form1);
-            this.form1.age = parseInt(this.form1.age)
+            this.$router.push('/lend')
+            // if (this.areAllFieldsEmptyTwo(this.form1)) {
+            //      return Toast(this.$t('a120'));
+            // }
+            // console.log(this.form1);
+            // this.form1.age = parseInt(this.form1.age)
 
-            const params = {
-                ...this.form1,
-                userId: JSON.parse(window.localStorage.getItem('userInfo')).userId,
-            }
+            // const params = {
+            //     ...this.form1,
+            //     userId: JSON.parse(window.localStorage.getItem('userInfo')).userId,
+            // }
 
-            User.setuserInfo(params).then(res => {
-                if (res.success) {
-                    Toast(this.$t('a114'));
+            // User.setuserInfo(params).then(res => {
+            //     if (res.success) {
+            //         Toast(this.$t('a114'));
 
 
-                    fbq('track', 'AddToCart');
+            //         fbq('track', 'AddToCart');
 
                     
-                    window.localStorage.setItem('userInfo1', JSON.stringify(this.form1))
+            //         window.localStorage.setItem('userInfo1', JSON.stringify(this.form1))
 
-                    if (!this.form2Show && !this.form3Show) {
-                        setTimeout(() => {
-                            this.$router.push('/lend')
-                        }, 1000)
-                    }
-                    else {
-                        this.form1Show = false
-                        this.show2 = true
-                    }
-                }
-                else {
-                    Toast(res.error);
-                }
-            })
+            //         if (!this.form2Show && !this.form3Show) {
+            //             setTimeout(() => {
+            //                 this.$router.push('/lend')
+            //             }, 1000)
+            //         }
+            //         else {
+            //             this.form1Show = false
+            //             this.show2 = true
+            //         }
+            //     }
+            //     else {
+            //         Toast(res.error);
+            //     }
+            // })
         },
         setfamily() {
             if (this.areAllFieldsEmpty(this.form2)) {
