@@ -162,28 +162,6 @@ export default {
       this.signaturePad && this.signaturePad.clear();
     },
     seaveImages() {
-<<<<<<< HEAD
-      // this.$router.push('/particulars')
-      if (this.signaturePad.isEmpty()) {
-        // Toast('署名を空にすることはできません');
-        Toast({
-          message:this.$t('a138'),
-          duration: 2000,
-          className: this.isLandscape ? "" : "sign-toast",
-        });
-      } else {
-        this.rotateBase64Img(
-          this.signaturePad.toDataURL(),
-          this.isLandscape ? 0 : 0,
-          async (dataBase64) => {
-            let file = this.dataURLtoFile(
-              dataBase64,
-              new Date().getTime() + ".png"
-            );
-            console.log(file, "file");
-            this.params["_contract.qianming_img"] = file.name
-            this.params["_contract.pdf_img"] = file.name;
-=======
       this.$router.push('/particulars')
       // if (this.signaturePad.isEmpty()) {
       //   // Toast('署名を空にすることはできません');
@@ -204,7 +182,6 @@ export default {
       //       console.log(file, "file");
       //       this.params["_contract.qianming_img"] = file.name
       //       this.params["_contract.pdf_img"] = file.name;
->>>>>>> 7e78a96cca658bf850bbe412eba784afecb30ed7
 
       //       let formData = new FormData();
       //       formData.append("file", file);
