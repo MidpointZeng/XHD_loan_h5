@@ -112,7 +112,7 @@ export default {
         return {
             aggrementShow: '',
             dialog: true,
-            months: ['3', '6', '12', '18', '24', '36', '48', '60', '72', '84', '96', '120'],
+            months: ['6', '12',  '36', '48', '60', '72'],
             monthActiveIndex: '60', // 60月的索引
             quota_useing2: 1000000,
             max_useing: 1000000,
@@ -409,6 +409,7 @@ export default {
     border-radius: 0.8rem;
 
     div {
+
         margin-top: 1.6rem;
 
         span {
@@ -416,23 +417,23 @@ export default {
             font-weight: 600;
             display: inline-block;
             vertical-align: top;
-            width: calc(25% - 9px);
+            width: calc(33% - 14px);
             text-align: center;
             line-height: 3.5rem;
             border: 1px solid rgb(181, 181, 181);
             border-radius: 0.5rem;
-            margin-right: 9px;
+            margin-right: 13px;
             margin-bottom: 1rem;
         }
 
-        .active {
+        .active {    
             color: rgb(255, 255, 255);
             background: var(--system-dark);
             border-color: var(--system-dark);
         }
 
         span:nth-child(4n) {
-            margin-right: 0px;
+            // margin-right: 0px;
         }
     }
 }
