@@ -114,11 +114,11 @@ export default {
             dialog: true,
             months: ['6', '12',  '36', '48', '60', '72'],
             monthActiveIndex: '60', // 60月的索引
-            quota_useing2: 1000000,
-            max_useing: 1000000,
+            quota_useing2: 2000000,
+            max_useing: 2000000,
             form: {
-                quota_useing: 1000000,
-                quota_used: 1000000,
+                quota_useing: 2000000,
+                quota_used: 2000000,
                 Interest: 0,
                 monthly_interest_rate: 0.4,
                 quota_start_time: '',

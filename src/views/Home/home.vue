@@ -14,7 +14,7 @@
           <div><span>{{ tips }}</span></div>
         </div>
         <h3 class="sc-dmRaPn fPIbLV"   v-text="$t('a10')" >最大貸款可能額 (¥)</h3>
-        <h2 class="sc-kgflAQ cLQTBj">{{ formatNumber(Info.quota_useing || '10000000') }} </h2>
+        <h2 class="sc-kgflAQ cLQTBj">{{ formatNumber(Info.quota_useing || '2000000') }} </h2>
         <ul class="sc-fLlhyt dETFRX">
           <li>
             <div>{{ Info.monthly_interest_rate * 100 || '0.4' }}%</div>
@@ -26,8 +26,8 @@
           </li>
         </ul>
         <div class="sc-bBrHrO hOhsct" @click="getUserInfo()"  v-text="$t('a14')">立即借款</div>
-        <div class="sc-ivTmOn dMBgxr"  v-text="$t('a15')">基本認證（必要）</div>
-        <ul class="sc-cxabCf fVHCyl">
+        <!-- <div class="sc-ivTmOn dMBgxr"  v-text="$t('a15')">基本認證（必要）</div> -->
+        <!-- <ul class="sc-cxabCf fVHCyl">
           <li>
             <span v-if="userinfoinfo == null"  v-text="$t('a16')" >未填寫</span>
             <span v-else class="success"  v-text="$t('a17')" >完成</span>
@@ -57,7 +57,7 @@
             <div v-else @click="$router.push('/submit')"  v-text="$t('a19')" >前往 &gt;</div>
 
           </li>
-        </ul>
+        </ul> -->
       </div>
     </div>
   </div>

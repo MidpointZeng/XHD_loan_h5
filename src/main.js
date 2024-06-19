@@ -9,8 +9,10 @@ import "@/utils/vant"; // 导入vant组件
 import api from './api/apiList';
 import "@/assets/css/base.css";
 // import { isWechat, noResetWeixinSize, AsyncAwaitVconsole } from "@/utils/index";
-
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
 import NavBar from "@/components/NavBar";
+Vue.use(ElementUI);
 Vue.component("NavBar", NavBar);
 import {
   Area
